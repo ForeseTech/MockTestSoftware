@@ -1,3 +1,4 @@
+/*CSS for the body and the header*/
 body, html{
 	margin: 0;
 	padding: 0;
@@ -15,21 +16,13 @@ body, html{
 	padding: 1% 0%;
 	font-size: 110%;
 }
-#finish{
-	text-align: center;
-	margin-top: 15%;
-	margin-left: 30%;
-	margin-right: 30%;
-	font-size: 135%;
-}
 
+/*CSS for the graphs*/
 #graph-overview{
 	width: 80%;
 	margin-left: 5.7%;
-	margin-top: 10%;
+	margin-top: 8%;
 }
-
-
 #graph-body{
 	width: 69.5%;
 	border-left: 2px black solid;
@@ -80,4 +73,13 @@ body, html{
 }
 #bar5{
 	background-color: purple;
+}
+
+/*CSS for the score paragraph at the bottom*/
+#score{
+	width: 100%;
+	font-size: 110%;
+	float: right;
+	padding: 4% 0% 3% 0%;
+	text-align: center;
 }

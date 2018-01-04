@@ -47,17 +47,35 @@ function finishAndCalc(){
 	alert("Time's up! You will now be directed to the 'Finish' page.");
 	
 	var i=0;
-	var count=0;
+	
+	var sec1=0;
+	var sec2=0;
+	var sec3=0;
+	var sec4=0;
+	var sec5=0;
+	
 	while(i<25){
 		var correct=correctAns[i];
 		var user=userAns[i];
-		if(correct==user){
-			count+=1;
-			alert("count is incremented at "+i);
+		
+		if(i<5 && user==correct){
+			sec1+=1;
+		}
+		else if(i<10 && user==correct){
+			sec2+=1;
+		}
+		else if(i<15 && user==correct){
+			sec3+=1;
+		}
+		else if(i<20 && user==correct){
+			sec4+=1;
+		}
+		else if(i<25 && user==correct){
+			sec5+=1;
 		}
 		i+=1;
 	}
-	window.location.href="../Finish-page/finish.php?score="+count;
+	window.location.href="../Finish-page/finish.php?s1="+sec1+"&s2="+sec2+"&s3="+sec3+"&s4="+sec4+"&s5="+sec5;
 }
 
 /* Arrays for the correct answers and user answers. Their functions too. */
