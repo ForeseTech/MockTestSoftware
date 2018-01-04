@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+	<title>MockTest Login Page</title>
+	<style>
+		body, html{
+			padding: 0;
+			margin: 0;
+		}
+		
+		.formInput{
+			display: block;
+			width: 25%;
+			padding: .5%;
+			margin: 1% auto;
+			font-family: "Verdana", sans-serif;
+			color: black;
+			font-size: 110%;
+		}
+		#loginform{
+			margin-top: 15%;
+		}
+		#deptSelect{
+			width: 26.75%;
+		}
+		#head{
+			position: fixed;
+			top: 0;
+			width: 100%;
+			border-bottom: 1px solid black;
+		}
+		#pageHead{
+			text-align: center;
+			padding: 1% 0%;
+			font-size: 135%;
+			font-family: "Verdana", sans-serif;
+		}
+		#submitButt{
+			width: 26.5%;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="head">
+		<header id="pageHead">Aptitude Test</header>
+		<div id="timer"></div>
+	</div>
+	<form id="loginform" method="post" action="loginpage.php">
+		<input type="text" class="formInput" name="terminalInput" placeholder="Terminal No.">
+		<input type="password" class="formInput" name="passwordInput" placeholder="Password" required><br><br>
+		
+		<input type="text" class="formInput" name="nameInput" placeholder="Your Name" required>
+		<select name="deptInput" class="formInput" id="deptSelect">
+			<option value="CS">CSE</option>
+			<option value="IT">IT</option>
+			<option value="EEE">EEE</option>
+			<option value="ECE">ECE</option>
+			<option value="CHEM">CHEM</option>
+			<option value="BIO">BIO</option>
+			<option value="CIVIL">CIVIL</option>
+			<option value="MECH">MECH</option>
+			<option value="AUTO">AUTO</option>
+		</select>
+		<input type="email" class="formInput" name="emailInput" placeholder="Your E-Mail ID" required>
+		<button type="submit" class="formInput" id="submitButt">LOGIN</button>
+	</form>
+</body>
+</html>

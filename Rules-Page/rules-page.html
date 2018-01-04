@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+	<title>MockTest Login Page</title>
+	<style>
+		body, html{
+			padding: 0;
+			margin: 0;
+		}
+		
+		#head{
+			position: fixed;
+			top: 0;
+			width: 100%;
+			border-bottom: 1px solid black;
+		}
+		#pageHead{
+			text-align: center;
+			padding: 1% 0%;
+			font-size: 135%;
+			font-family: "Verdana", sans-serif;
+		}
+		#redirectButton{
+			width: 30%;
+			padding: 2%;
+			cursor: pointer;
+			display: block;
+			margin: 7% auto;
+			cursor: pointer;
+			font-size: 100%;
+		}
+		
+		#rulesBody{
+			font-family: "Verdana", sans-serif;
+			font-size: 120%;
+			width: 60%;
+			margin: 15% auto;
+			display: block;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="head">
+		<header id="pageHead">Aptitude Test</header>
+		<div id="timer"></div>
+	</div>
+	<div id="rulesBody">
+		<p id="rules-para">There will be a total of 25 questions. Total time of 25 minutes. No negatives for wrong answers. All the best!</p>
+		<button type="button" id="redirectButton">Start Test</button>
+	</div>
+</body>
+
+<script>
+	document.getElementById("redirectButton").addEventListener("click", goToQuestions);
+	function goToQuestions(){
+		window.location.href="../Question-Page/question-page.php";
+	}
+</script>
+
+</html>

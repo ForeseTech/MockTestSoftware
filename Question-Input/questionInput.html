@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+	<title>Question Input Page</title>
+	<style>
+		body, html{
+			padding: 0;
+			margin: 0;
+		}
+		.textInput{
+			display: block;
+			font-size: 120%;
+			width: 50%;
+			margin: 2%;
+		}
+		#submitButt{
+			margin: 2%;
+			margin-top: 1%;
+			width: 50%;
+			padding: 2%;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<form id="quesInput" action="questionInput.php" method="post">
+		<input name="quesInput" class="textInput" type="text" placeholder="Question goes here!">
+		<input name="optaInput" class="textInput" type="text" placeholder="Option A goes here!">
+		<input name="optbInput" class="textInput" type="text" placeholder="Option B goes here!">
+		<input name="optcInput" class="textInput" type="text" placeholder="Option C goes here!">
+		<input name="optdInput" class="textInput" type="text" placeholder="Option D goes here!">
+		<button type="submit" id="submitButt">SUBMIT</button>
+	</form>
+</body>
+</html>

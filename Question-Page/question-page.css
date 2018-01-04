@@ -1,0 +1,87 @@
+body, html{
+	margin: 0;
+	padding: 0;
+	font-family: "Verdana", sans-serif;
+}
+
+#head{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	border-bottom: 1px solid black;
+}
+#pageHead{
+	text-align: center;
+	padding: 1% 0%;
+	font-size: 110%;
+}
+#timer{
+	font-size: 140%;
+	padding: 1% 0%;
+	color: green;
+	text-align: center;
+	font-weight: 700;
+}
+
+#question-body{
+	width: 100%;
+	margin-top: 10%;
+	overflow-x: hidden;
+}
+
+/*For the question and its answers. Also, for the next and previous buttons.*/
+#current-question{
+	width: 62%;
+	margin-left: 3%;
+	margin-right: 3%;
+	float: left;
+}
+#question{
+	padding: 2% 0% 2% 0;
+}
+#finish-para{
+	font-size: 140%;
+}
+.radio_ans{
+	margin: 1.5% .5% 1.5% 0.5%;
+}
+.form-buttons{
+	border: none;
+	border: 1px solid black;
+	width: 17%;
+	margin-top: 5%;
+	margin-left: 29%;
+	padding: 1%;
+	float: left;
+	font-size: 100%;
+	background-color: white;
+	cursor: pointer;
+}
+#nextButton{
+	float: right;
+	margin-right: 29%;
+	margin-left: 0%;
+}
+#endSubmitButton{
+	margin-left: 36%;
+}
+/*Ends here*/
+
+/*For the overview of all the questions.*/
+#overview{
+	width: 30%;
+	float: left;
+}
+.questionOverview{
+	background: gray;
+	padding: .5% 4.5% .5% 4.5%;
+	margin: 2% 2%;
+	width: 11%;
+	float: left;
+	cursor: pointer;
+}
+.questionOverviewNum{
+	width: 100%;
+	text-align: center;
+}
+/*Ends here*/
