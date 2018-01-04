@@ -1,5 +1,5 @@
-window.setTimeout(redirect, 10000);
+window.setTimeout(redirect, 30000);
 
 function redirect(){
-	alert("This page will be redirected. Link this to the Login Page.");
+	window.location.href="../Login-Page/loginpage.html";
 }

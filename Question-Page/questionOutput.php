@@ -1,4 +1,10 @@
 <?php
+	session_start();
+
+	if(!array_key_exists('terminalNum',$_SESSION) && empty($_SESSION['terminalNum'])) {
+		echo "<script>window.location.href='../Login-Signup/loginpage.html';</script>";
+	}
+	
 	function setConn(){
 		$servername="localhost";
 		$user="root";

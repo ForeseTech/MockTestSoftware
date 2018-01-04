@@ -44,8 +44,6 @@ function changeTimer(){
 
 /* JS for all the buttons and everything else */
 function finishAndCalc(){
-	alert("Time's up! You will now be directed to the 'Finish' page.");
-	
 	var i=0;
 	
 	var sec1=0;
