@@ -26,8 +26,7 @@ function changeTimer(){
 	
 	if(timerSecond==0){
 		if(timerMinute==0 && timerSecond==0){
-			alert("Time's up! You will now be directed to the 'Finish' page.");
-			window.location.href="../Finish-Page/finish.html";
+			finishAndCalc();
 		}
 		if(timerMinute==1){
 			document.getElementById("timer").style.color="red";
@@ -37,8 +36,7 @@ function changeTimer(){
 	}
 	
 	if(timerMinute<0){
-		calcScore();
-		window.location.href="../Finish-Page/finish.html";
+		finishAndCalc();
 	}
 }
 
@@ -73,7 +71,7 @@ function finishAndCalc(){
 		}
 		i+=1;
 	}
-	window.location.href="../Finish-page/finish.php?s1="+sec1+"&s2="+sec2+"&s3="+sec3+"&s4="+sec4+"&s5="+sec5;
+	window.location.href="../Finish-Page/finish.php?s1="+sec1+"&s2="+sec2+"&s3="+sec3+"&s4="+sec4+"&s5="+sec5;
 }
 
 /* Arrays for the correct answers and user answers. Their functions too. */

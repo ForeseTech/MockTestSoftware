@@ -30,7 +30,7 @@
 	<title>Finish</title>
 	<link href="finish.css" rel="stylesheet">
 	<script src="finish.js"></script>
-</head> arjun
+</head>
 
 <body>
 	<div id="head">
