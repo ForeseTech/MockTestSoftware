@@ -30,20 +30,21 @@ while($i<1000){
 		$num=0;
 		$str="0";
 
-		$sql_stmt="INSERT INTO LOGIN VALUES (?,?,?,?,?,?,?,?,?,?,?,?)";
+		$sql_stmt="INSERT INTO LOGIN VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)";
 		$sql=$conn->prepare($sql_stmt);
 		$sql->bindParam(1, $terminalName);
-		$sql->bindParam(2, $i);
-		$sql->bindParam(3, $str);
+		$sql->bindParam(2, $num);
+		$sql->bindParam(3, $i);
 		$sql->bindParam(4, $str);
 		$sql->bindParam(5, $str);
-		$sql->bindParam(6, $num);
+		$sql->bindParam(6, $str);
 		$sql->bindParam(7, $num);
 		$sql->bindParam(8, $num);
 		$sql->bindParam(9, $num);
 		$sql->bindParam(10, $num);
 		$sql->bindParam(11, $num);
 		$sql->bindParam(12, $num);
+		$sql->bindParam(13, $num);
 		$sql->execute();
 	
 	} catch (PDOException $e){

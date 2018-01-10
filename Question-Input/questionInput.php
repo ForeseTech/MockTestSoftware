@@ -20,7 +20,7 @@ $setno=0;
 try{
     $conn=setConn();
 
-	$sql_stmt="INSERT INTO QUESTIONS VALUES (QUESTION_NO, ?,?,?,?,?,?)";
+	$sql_stmt="INSERT INTO questions VALUES (QUESTION_NO, ?,?,?,?,?,?)";
 	$sql=$conn->prepare($sql_stmt);
 	$sql->bindParam(1, $question);
 	$sql->bindParam(2, $opta);
