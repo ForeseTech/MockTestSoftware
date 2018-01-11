@@ -1,3 +1,13 @@
+<?php
+	session_start();
+	loginRedirect();
+
+	function loginRedirect(){
+		if(!array_key_exists('terminalNum',$_SESSION) && empty($_SESSION['terminalNum'])) {
+			echo "<script>window.location.href='../Login-Page/loginpage.html';</script>";
+		}
+	}
+?>
 <DOCTYPE! html>
 <!-- This is just the front-end, i.e, how the page will look. Ajax and PHP will have to be included later. 
 	1. NOTES:- 
