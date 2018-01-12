@@ -35,7 +35,7 @@
 		if($q!=26){
 		    $conn=setConn();
 	
-			$sql_stmt="SELECT* FROM QUESTIONS WHERE QUESTION_NO=$q";
+			$sql_stmt="SELECT* FROM SET".$_SESSION['setNum']." WHERE QUESTION_NO=$q";
 	
 		  	$stmt = $conn->query($sql_stmt);
 		 	$results = $stmt->fetchAll(PDO::FETCH_ASSOC);

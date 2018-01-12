@@ -25,7 +25,7 @@
 	
 	try{
 	    $conn=setConn();
-		$sql_stmt="SELECT COUNT(TERMINAL_NO) AS NUM FROM LOGIN WHERE TERMINAL_NO='$terminal' AND LOGGED_IN=0";
+		$sql_stmt="SELECT COUNT(TERMINAL_NO) AS NUM, SET_NO FROM LOGIN WHERE TERMINAL_NO='$terminal' AND LOGGED_IN=0";
 
 	  	$stmt = $conn->query($sql_stmt);
 	 	$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -36,6 +36,9 @@
 				echo "<script>window.location.href='loginpage.html';</script>";
 			}
 			if($row['NUM']==1){
+				
+				$_SESSION['setNum']=$row['SET_NO'];
+				
 			    $conn=setConn();
 				$sql_stmt="UPDATE LOGIN SET NAME=?, REG_NO=?, DEPT=?, EMAIL=?, LOGGED_IN=1 WHERE TERMINAL_NO=?";
 				
