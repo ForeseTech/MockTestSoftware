@@ -45,6 +45,7 @@
 			$OPTB="";
 			$OPTC="";
 			$OPTD="";
+			$PICTURE="";
 			
 			foreach($results as $row){
 				$question=$row['QUESTION_TEXT'];
@@ -52,10 +53,17 @@
 				$OPTB=$row['OPTB'];
 				$OPTC=$row['OPTC'];
 				$OPTD=$row['OPTD'];
+				$PICTURE=$row['PICTURE'];
 			}
 			
-			echo "<header id='question'>$q. $question</header>
-				<div id='answers'>";
+			echo "<header id='question'>$q. $question</header>";
+			
+			if($PICTURE!="NONE"){
+				echo "<img src='$PICTURE' id='questionPic'>";
+			}
+			
+			echo "<div id='answers'>";
+			
 			if($checkedNum==1){
 				echo "<input type='radio' name='gender' value='1' id='ans_one' onclick='check($q)' class='radio_ans' checked>$OPTA<br>
 					<input type='radio' name='gender' value='2' id='ans_two' onclick='check($q)' class='radio_ans'>$OPTB<br>
@@ -87,7 +95,7 @@
 					<input type='radio' name='gender' value='4' id='ans_four' onclick='check($q)' class='radio_ans'>$OPTD<br>";
 			}
 					
-			echo"</div>
+			echo "</div>
 				<button type='button' class='form-buttons' id='prevButton' onclick='showInfo($prevNum);'>Previous</button>
 				<button type='button' class='form-buttons' id='nextButton' onclick='showInfo($nextNum);'>Next</button>";
 		}
