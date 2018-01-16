@@ -10,6 +10,15 @@ function setConn(){
 	return $CONN;
 }
 
+try{
+	$conn=setConn();
+	$sql_stmt="DELETE FROM LOGIN;";
+	$sql=$conn->prepare($sql_stmt);
+	$sql->execute();
+} catch (PDOException $e){
+	echo $e."<br>";
+}
+
 $i=1;
 $setNum=1;
 

@@ -57,6 +57,7 @@
 			<div class='questionOverview' id='indiQuestion23' onclick='showInfo(23)'><p class='questionOverviewNum'>23</p></div>
 			<div class='questionOverview' id='indiQuestion24' onclick='showInfo(24)'><p class='questionOverviewNum'>24</p></div>
 			<div class='questionOverview' id='indiQuestion25' onclick='showInfo(25)'><p class='questionOverviewNum'>25</p></div>
+			<button type='button' id='genSubmitButton' onclick='finishAndCalc(<?php echo $_SESSION['setNum']; ?>);' class='form-Buttons'>Submit Answers!</button>
 		</div>
 	</div>
 </body>

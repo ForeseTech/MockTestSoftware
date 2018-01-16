@@ -73,6 +73,13 @@ body, html{
 #endSubmitButton{
 	margin-left: 36%;
 }
+#genSubmitButton{
+	margin-left: 2%;
+	display: block;
+	width: 93.5%;
+	padding: 4%;
+	background-color: #FFCC80;
+}
 /*Ends here*/
 
 /*For the overview of all the questions.*/
@@ -81,7 +88,8 @@ body, html{
 	float: left;
 }
 .questionOverview{
-	background: gray;
+	background-color: #BBDEFB;
+	border: 1px solid black;
 	padding: .5% 4.5% .5% 4.5%;
 	margin: 2% 2%;
 	width: 11%;
