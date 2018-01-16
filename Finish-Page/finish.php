@@ -46,11 +46,11 @@
 			<div id="bar5" class="bars" <?php echo "style='width: $per5%'";?> ><p class="graph-percentages"><?php echo $per5;?>%</p></div>
 		</div>
 		<div id="graph-desc">
-			<p class="graph-desc-paras" id="para1">Quantitative</p>
-			<p class="graph-desc-paras">Argument Drills</p>
-			<p class="graph-desc-paras">Reading Comprehension</p>
-			<p class="graph-desc-paras">Chart Interpretation</p>
-			<p class="graph-desc-paras">Text Completion</p>
+			<p class="graph-desc-paras" id="para1">Text Completion - I</p>
+			<p class="graph-desc-paras">Text Completion - II</p>
+			<p class="graph-desc-paras">Chart Interpretation - I</p>
+			<p class="graph-desc-paras">Chart Interpretation - II</p>
+			<p class="graph-desc-paras">Quantity Comparison</p>
 		</div>
 	</div>
 	
