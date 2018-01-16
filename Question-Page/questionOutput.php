@@ -101,7 +101,7 @@
 		}
 		else{
 			echo "<p id='finish-para'>You have reached the final question. Your time limit is not over yet. You could review your answers <b>or</b> submit your answers and finish the test.</p>
-				<button type='button' id='endSubmitButton' onclick='finishAndCalc();' class='form-Buttons'>Submit Answers!</button>";
+				<button type='button' id='endSubmitButton' onclick='finishAndCalc(".$_SESSION['setNum'].");' class='form-Buttons'>Submit Answers!</button>";
 		}
 	} catch(PDOException $e){
 		$e."<br>";

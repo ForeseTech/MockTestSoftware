@@ -11,6 +11,7 @@ function setConn(){
 }
 
 $i=1;
+$setNum=1;
 
 while($i<1000){
 	$terminalName="";
@@ -38,7 +39,7 @@ while($i<1000){
 		$sql->bindParam(4, $str);
 		$sql->bindParam(5, $str);
 		$sql->bindParam(6, $str);
-		$sql->bindParam(7, $num);
+		$sql->bindParam(7, $setNum);
 		$sql->bindParam(8, $num);
 		$sql->bindParam(9, $num);
 		$sql->bindParam(10, $num);
@@ -50,6 +51,11 @@ while($i<1000){
 	} catch (PDOException $e){
 		echo $e."<br>";
 	}
+	
+	if($setNum==3){
+		$setNum=0;
+	}
+	$setNum+=1;
 	$i+=1;
 }
 

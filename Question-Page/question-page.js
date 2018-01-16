@@ -26,7 +26,9 @@ function changeTimer(){
 	
 	if(timerSecond==0){
 		if(timerMinute==0 && timerSecond==0){
-			finishAndCalc();
+			echoSetNum();
+			alert("Thanks for taking the test! Click 'OK' to see your scores!");
+			finishAndCalc(setNum);
 		}
 		if(timerMinute==1){
 			document.getElementById("timer").style.color="red";
@@ -36,12 +38,13 @@ function changeTimer(){
 	}
 	
 	if(timerMinute<0){
-		finishAndCalc();
+		echoSetNum();
+		finishAndCalc(setNum);
 	}
 }
 
 /* JS for all the buttons and everything else */
-function finishAndCalc(){
+function finishAndCalc(num){
 	var i=0;
 	
 	var sec1=0;
@@ -51,33 +54,90 @@ function finishAndCalc(){
 	var sec5=0;
 	
 	while(i<25){
-		var correct=correctAns[i];
-		var user=userAns[i];
 		
-		if(i<5 && user==correct){
-			sec1+=1;
+		if(num==1){
+			var correct=correctAns1[i];
+			var user=userAns[i];
+		
+			if(i<5 && user==correct){
+				sec1+=1;
+			}
+			else if(i<10 && user==correct){
+				sec2+=1;
+			}
+			else if(i<15 && user==correct){
+				sec3+=1;
+			}
+			else if(i<20 && user==correct){
+				sec4+=1;
+			}
+			else if(i<25 && user==correct){
+				sec5+=1;
+			}
 		}
-		else if(i<10 && user==correct){
-			sec2+=1;
+		else if(num==2){
+			var correct=correctAns2[i];
+			var user=userAns[i];
+		
+			if(i<5 && user==correct){
+				sec1+=1;
+			}
+			else if(i<10 && user==correct){
+				sec2+=1;
+			}
+			else if(i<15 && user==correct){
+				sec3+=1;
+			}
+			else if(i<20 && user==correct){
+				sec4+=1;
+			}
+			else if(i<25 && user==correct){
+				sec5+=1;
+			}
 		}
-		else if(i<15 && user==correct){
-			sec3+=1;
-		}
-		else if(i<20 && user==correct){
-			sec4+=1;
-		}
-		else if(i<25 && user==correct){
-			sec5+=1;
+		else if(num==3){
+			var correct=correctAns3[i];
+			var user=userAns[i];
+		
+			if(i<5 && user==correct){
+				sec1+=1;
+			}
+			else if(i<10 && user==correct){
+				sec2+=1;
+			}
+			else if(i<15 && user==correct){
+				sec3+=1;
+			}
+			else if(i<20 && user==correct){
+				sec4+=1;
+			}
+			else if(i<25 && user==correct){
+				sec5+=1;
+			}
 		}
 		i+=1;
 	}
 	window.location.href="../Finish-Page/finish.php?s1="+sec1+"&s2="+sec2+"&s3="+sec3+"&s4="+sec4+"&s5="+sec5;
 }
 
-/* Arrays for the correct answers and user answers. Their functions too. */
+function echoSetNum(){
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            setNum = this.responseText;
+        }
+    };
+    xmlhttp.open("GET", "echoSetNum.php", true);
+    xmlhttp.send();
+}
 
+/* Arrays for the correct answers and user answers. Their functions too. */
+var setNum=0;
 var userAns=new Array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
-var correctAns=new Array(1,3,3,1,3,4,1,1,2,1,1,3,2,2,2,1,4,1,4,1,2,1,4,1,1);
+
+var correctAns1=new Array(4,1,1,2,2,3,1,3,3,1,4,2,1,1,1,1,4,3,2,4,4,2,2,1,2);
+var correctAns2=new Array(4,1,1,2,3,3,1,2,1,2,4,2,1,1,1,2,2,1,3,1,4,2,2,1,2);
+var correctAns3=new Array(1,2,1,1,2,3,1,3,3,1,2,4,2,3,2,1,4,3,2,4,1,4,2,3,4);
 
 function check(qno){
 	if(document.getElementById("ans_one").checked==true){
