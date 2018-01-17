@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Jan 17, 2018 at 11:20 AM
+-- Generation Time: Jan 16, 2018 at 11:20 PM
 -- Server version: 5.6.36-cll-lve
 -- PHP Version: 5.6.30
 
@@ -48,62 +48,62 @@ CREATE TABLE IF NOT EXISTS `LOGIN` (
 --
 
 INSERT INTO `LOGIN` (`TERMINAL_NO`, `LOGGED_IN`, `REG_NO`, `NAME`, `DEPT`, `EMAIL`, `SET_NO`, `SEC_1`, `SEC_2`, `SEC_3`, `SEC_4`, `SEC_5`, `TOTAL_SCORE`) VALUES
-('exam001', 0, '1', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
-('exam002', 0, '2', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
-('exam003', 0, '3', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
-('exam004', 0, '4', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
-('exam005', 0, '5', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
-('exam006', 0, '6', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
-('exam007', 0, '7', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
-('exam008', 0, '8', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
-('exam009', 0, '9', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
-('exam010', 0, '10', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
-('exam011', 0, '11', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
-('exam012', 0, '12', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
-('exam013', 0, '13', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
-('exam014', 0, '14', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
-('exam015', 0, '15', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
-('exam016', 0, '16', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
-('exam017', 0, '17', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
-('exam018', 0, '18', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
-('exam019', 0, '19', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
-('exam020', 0, '20', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
-('exam021', 0, '21', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
-('exam022', 0, '22', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
+('exam001', 1, '2147483647', 'Abishaik Mohan', 'CS', 'm_abishaik@protonmail.com', 1, 0, 0, 0, 0, 0, 0),
+('exam002', 1, '2147483647', 'Achuthan Ram', 'CS', 'achyuthan1000@gmail.com', 2, 0, 0, 0, 0, 0, 0),
+('exam003', 1, '2147483647', 'Aishwarya Ramanathan', 'CS', 'itsmeaish97@gmail.com', 3, 1, 2, 3, 1, 1, 8),
+('exam004', 1, '2147483647', 'M. Adarsh Manickam', 'CS', 'adarshm97@outlook.com', 1, 3, 3, 1, 0, 0, 7),
+('exam005', 1, '2147483647', 'S Aditya Raman', 'CS', 'shadowdungeons@gmail.com', 2, 0, 0, 0, 0, 0, 0),
+('exam006', 1, '2147483647', 'akshay', 'CS', 'akshay.mohan147@gmail.com', 3, 2, 1, 2, 2, 3, 10),
+('exam007', 1, '2147483647', 'Akash Saravanan', 'CS', 'akashsara69@gmail.com', 1, 4, 3, 5, 3, 2, 17),
+('exam008', 1, '2147483647', 'S Anirudh Rajhgopalann', 'CS', 'anirudhsr97@gmail.com', 2, 2, 3, 5, 1, 3, 14),
+('exam009', 1, '2147483647', 'Ananya Naresh', 'CS', 'ananya.naresh@gmail.com', 3, 3, 3, 2, 2, 3, 13),
+('exam010', 1, '2147483647', 'Amrutha', 'CS', 'amad9705@gmail.com', 1, 0, 0, 0, 0, 0, 0),
+('exam011', 1, '2147483647', 'arvind ts', 'CS', 'aravindmaroon@gmail.com', 2, 2, 1, 3, 4, 1, 11),
+('exam012', 1, '2147483647', 'Aravindhan K', 'CS', 'aravindkathiravan6@gmail.com', 3, 0, 0, 0, 0, 0, 0),
+('exam013', 1, '2147483647', 'Aparna V', 'CS', 'aparnavijayakumar96@gmail.com', 1, 3, 1, 5, 4, 3, 16),
+('exam014', 1, '2147483647', 'M ARUN KUAMR', 'CS', 'arun98007@gmail.com', 2, 0, 0, 0, 0, 0, 0),
+('exam015', 1, '2147483647', 'G ARVIND', 'CS', 'g.arvind7@gmail.com', 3, 2, 1, 5, 3, 2, 13),
+('exam016', 1, '2147483647', 'Ashwin.T', 'CS', 'ashwincts0@gmail.com', 1, 0, 0, 0, 0, 0, 0),
+('exam017', 1, '2147483647', 'BHARHATH R', 'CS', 'bharhathramesh1997@gmail.com', 2, 0, 0, 0, 0, 0, 0),
+('exam018', 1, '2147483647', 'Arvind H', 'CS', 'arvind.hasti@gmail.com', 3, 0, 3, 4, 3, 4, 14),
+('exam019', 1, '2147483647', 'Bhargav Rao', 'CS', 'bhargav.max@gmail.com', 1, 3, 4, 5, 3, 2, 17),
+('exam020', 1, '2147483647', 'Ashwin G', 'CS', 'ashwinsvce15@gmail.com', 2, 3, 3, 5, 2, 2, 15),
+('exam021', 1, '2147483647', 'Dhamodharan K M', 'CS', 'kmdhamodharan1997@gmail.com', 3, 1, 2, 3, 3, 1, 10),
+('exam022', 1, '160501030', 'Arjun Aravind', 'CS', 'arjun@gmail.com', 1, 4, 0, 0, 0, 0, 4),
 ('exam023', 0, '23', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
 ('exam024', 0, '24', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
-('exam025', 0, '25', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
+('exam025', 1, '2147483647', 'M. Adarsh Manickam', 'CS', 'adarshm97@outlook.com', 1, 3, 3, 5, 4, 0, 15),
 ('exam026', 0, '26', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
 ('exam027', 0, '27', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
 ('exam028', 0, '28', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
 ('exam029', 0, '29', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
-('exam030', 0, '30', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
-('exam031', 0, '31', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
+('exam030', 1, '2147483647', 'V.Harish Nandan', 'CS', 'hnandan59@gmail.com', 3, 2, 3, 2, 3, 4, 14),
+('exam031', 1, '2147483647', 'V T karpagam', 'CS', 'karpagam3737@gmail.com', 1, 2, 2, 0, 3, 2, 9),
 ('exam032', 0, '32', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
-('exam033', 0, '33', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
-('exam034', 0, '34', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
-('exam035', 0, '35', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
-('exam036', 0, '36', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
-('exam037', 0, '37', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
-('exam038', 0, '38', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
-('exam039', 0, '39', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
-('exam040', 0, '40', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
-('exam041', 0, '41', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
-('exam042', 0, '42', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
-('exam043', 0, '43', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
-('exam044', 0, '44', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
-('exam045', 0, '45', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
-('exam046', 0, '46', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
-('exam047', 0, '47', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
-('exam048', 0, '48', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
-('exam049', 0, '49', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
-('exam050', 0, '50', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
-('exam051', 0, '51', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
-('exam052', 0, '52', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
+('exam033', 1, '2147483647', 'Devisri P', 'CS', 'devisriprudhive@gmail.com', 3, 2, 2, 1, 0, 2, 7),
+('exam034', 1, '2147483647', 'KANMANI K', 'CS', 'kanmanikarthikeyan13@gmail.com', 1, 2, 3, 5, 3, 1, 14),
+('exam035', 1, '2147483647', 'J.Kadambare', 'CS', 'kadambare1997@gmail.com', 2, 3, 5, 5, 2, 1, 16),
+('exam036', 1, '2147483647', 'B.V.HRILEKHA', 'CS', 'vijayavenkat.bvh@gmail.com', 3, 0, 0, 0, 0, 0, 0),
+('exam037', 1, '2147483647', 'Hemanth Ramya.N', 'CS', 'evyrao922@gmail.com', 1, 2, 1, 5, 2, 3, 13),
+('exam038', 1, '2147483647', 'B.Devika', 'CS', 'devika.sivaprasad@gmail.com', 2, 1, 2, 3, 2, 2, 10),
+('exam039', 1, '2147483647', 'S.HINDHUJA', 'CS', 'selvamhinduja@gmail.com', 3, 1, 3, 2, 3, 1, 10),
+('exam040', 1, '2147483647', 'IYAPPAN S', 'CS', 'iyappan.s.k@gmail.com', 1, 3, 2, 5, 4, 2, 16),
+('exam041', 1, '2147483647', 'D.GUNASEKARAN', 'CS', 'sarathinarayanan57124@yahoo.com', 2, 0, 2, 1, 1, 1, 5),
+('exam042', 1, '2147483647', 'gopikrishnan.s', 'CS', 'gopikrishnans15@gmail.com', 3, 1, 1, 3, 1, 1, 7),
+('exam043', 1, '2147483647', 'B.V.HRILEKHA', 'CS', 'vijayavenkat.bvh@gmail.com', 1, 2, 2, 4, 4, 1, 13),
+('exam044', 1, '2147483647', 'Haripriya.s', 'CS', 'haripriya7379@gmail.com', 2, 1, 3, 2, 4, 1, 11),
+('exam045', 1, '2147483647', 'Hariharan Venkatesan', 'CS', 'haripavani1810@gmail.com', 3, 2, 3, 0, 0, 3, 8),
+('exam046', 1, '2147483647', 'Gurudutt P', 'CS', 'thegdaproject@gmail.com', 1, 4, 3, 5, 4, 0, 16),
+('exam047', 1, '2147483647', 'Giridharan N V', 'CS', 'giridharannv1997@gmail.com', 2, 4, 4, 2, 2, 2, 14),
+('exam048', 1, '2147483647', 'S.CHRAN', 'CS', 'charkood@gmail.com', 3, 3, 1, 4, 2, 4, 14),
+('exam049', 1, '2147483647', 'KAMLESH.B.R.', 'CS', 'kamleshdhoni@gmail.com', 1, 3, 1, 5, 3, 2, 14),
+('exam050', 1, '2147483647', 'S.Gowtham', 'CS', 'gowthammsathya@gmail.com', 2, 0, 0, 0, 0, 0, 0),
+('exam051', 1, '2147483647', 'R.C.Evans Steve Solomon', 'CS', 'evansstevesolomon@gmail.com', 3, 4, 1, 4, 4, 3, 16),
+('exam052', 1, '2147483647', 'S.Gowtham', 'CS', 'gowthammsathya@gmail.com', 1, 2, 2, 3, 2, 2, 11),
 ('exam053', 0, '53', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
-('exam054', 0, '54', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
-('exam055', 0, '55', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
-('exam056', 0, '56', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
+('exam054', 1, '2147483647', 'Arjun Aravind', 'CS', 'arjun@gmail.com', 3, 1, 0, 0, 0, 0, 1),
+('exam055', 1, '2147483647', 'arjun', 'CS', 'arjun@gmail.com', 1, 1, 0, 0, 0, 0, 1),
+('exam056', 1, '160501027', 'hghjgj', 'CS', 'arjun@gmail.com', 2, 1, 0, 0, 0, 0, 1),
 ('exam057', 0, '57', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
 ('exam058', 0, '58', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
 ('exam059', 0, '59', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
@@ -147,8 +147,8 @@ INSERT INTO `LOGIN` (`TERMINAL_NO`, `LOGGED_IN`, `REG_NO`, `NAME`, `DEPT`, `EMAI
 ('exam097', 0, '97', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
 ('exam098', 0, '98', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
 ('exam099', 0, '99', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
-('exam100', 0, '100', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
-('exam101', 0, '101', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
+('exam100', 1, '2147483646', 'arjun', 'CS', 'arjun.aravind1998@gmail.com', 1, 0, 0, 0, 0, 0, 0),
+('exam101', 1, '2147483647', 'jhfhghff', 'CS', 'arjun.aravind1998@gmail.com', 2, 0, 0, 0, 0, 0, 0),
 ('exam102', 0, '102', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
 ('exam103', 0, '103', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
 ('exam104', 0, '104', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
@@ -886,7 +886,8 @@ INSERT INTO `LOGIN` (`TERMINAL_NO`, `LOGGED_IN`, `REG_NO`, `NAME`, `DEPT`, `EMAI
 ('exam836', 0, '836', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
 ('exam837', 0, '837', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
 ('exam838', 0, '838', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
-('exam839', 0, '839', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
+('exam839', 0, '839', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0);
+INSERT INTO `LOGIN` (`TERMINAL_NO`, `LOGGED_IN`, `REG_NO`, `NAME`, `DEPT`, `EMAIL`, `SET_NO`, `SEC_1`, `SEC_2`, `SEC_3`, `SEC_4`, `SEC_5`, `TOTAL_SCORE`) VALUES
 ('exam840', 0, '840', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
 ('exam841', 0, '841', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
 ('exam842', 0, '842', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
@@ -923,8 +924,7 @@ INSERT INTO `LOGIN` (`TERMINAL_NO`, `LOGGED_IN`, `REG_NO`, `NAME`, `DEPT`, `EMAI
 ('exam873', 0, '873', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
 ('exam874', 0, '874', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
 ('exam875', 0, '875', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
-('exam876', 0, '876', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0);
-INSERT INTO `LOGIN` (`TERMINAL_NO`, `LOGGED_IN`, `REG_NO`, `NAME`, `DEPT`, `EMAIL`, `SET_NO`, `SEC_1`, `SEC_2`, `SEC_3`, `SEC_4`, `SEC_5`, `TOTAL_SCORE`) VALUES
+('exam876', 0, '876', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
 ('exam877', 0, '877', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
 ('exam878', 0, '878', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
 ('exam879', 0, '879', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
@@ -949,7 +949,7 @@ INSERT INTO `LOGIN` (`TERMINAL_NO`, `LOGGED_IN`, `REG_NO`, `NAME`, `DEPT`, `EMAI
 ('exam898', 0, '898', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
 ('exam899', 0, '899', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
 ('exam900', 0, '900', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
-('exam901', 0, '901', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
+('exam901', 1, '2147483647', 'Amrutha', 'CS', 'amad9705@gmail.com', 1, 3, 5, 5, 3, 3, 19),
 ('exam902', 0, '902', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
 ('exam903', 0, '903', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0),
 ('exam904', 0, '904', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
@@ -1048,224 +1048,6 @@ INSERT INTO `LOGIN` (`TERMINAL_NO`, `LOGGED_IN`, `REG_NO`, `NAME`, `DEPT`, `EMAI
 ('exam997', 0, '997', '0', '0', '0', 1, 0, 0, 0, 0, 0, 0),
 ('exam998', 0, '998', '0', '0', '0', 2, 0, 0, 0, 0, 0, 0),
 ('exam999', 0, '999', '0', '0', '0', 3, 0, 0, 0, 0, 0, 0);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `SCORES`
---
-
-CREATE TABLE IF NOT EXISTS `SCORES` (
-  `STUD_NO` int(10) NOT NULL AUTO_INCREMENT,
-  `REG_NO` varchar(100) NOT NULL,
-  `NAME` varchar(100) NOT NULL,
-  `DEPT` varchar(100) NOT NULL,
-  `EMAIL` varchar(100) NOT NULL,
-  `SEC1` int(11) NOT NULL,
-  `SEC2` int(11) NOT NULL,
-  `SEC3` int(11) NOT NULL,
-  `SEC4` int(11) NOT NULL,
-  `SEC5` int(11) NOT NULL,
-  `TOTAL` int(11) DEFAULT NULL,
-  PRIMARY KEY (`STUD_NO`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=189 ;
-
---
--- Dumping data for table `SCORES`
---
-
-INSERT INTO `SCORES` (`STUD_NO`, `REG_NO`, `NAME`, `DEPT`, `EMAIL`, `SEC1`, `SEC2`, `SEC3`, `SEC4`, `SEC5`, `TOTAL`) VALUES
-(142, '212715106123', 'RAHUL R', 'ECE', 'rahulmanivasagan1@gmail.com', 2, 1, 1, 0, 0, 4),
-(143, '212715106129', 'RISHEEIK BHARADWAJ JR', 'ECE', 'batman.robin98@gmail.com', 3, 3, 4, 3, 1, 14),
-(144, '212715106160', 'SUBATHRA K', 'ECE', 'subathrakalaiyarasi@gmail.com', 4, 2, 2, 1, 1, 10),
-(145, '212715106142', 'SELVA SUDHA S', 'ECE', 'selva_sudha97@yahoo.in', 2, 2, 3, 2, 2, 11),
-(146, '212715106177', 'VIKRANTH H', 'ECE', 'vikranth98h@gmail.com', 1, 3, 1, 3, 2, 10),
-(147, '212715106140', 'R SANDEEP KUMAR', 'ECE', 'sandeepkumaramni@gmail.com', 3, 1, 3, 2, 2, 11),
-(148, '212715106137', 'SAMUEL P', 'ECE', 'samtinesp@gmail.com', 2, 3, 5, 4, 1, 15),
-(149, '212715106158', 'G SRIVATSAN', 'ECE', 'srivatsanvj@gmail.com', 1, 2, 4, 1, 1, 9),
-(150, '212715106128', 'R TILAK', 'ECE', 'tilak29081998@gmail.com', 0, 0, 0, 0, 0, 0),
-(151, '212715106132', 'C ROOPALAKSHMI', 'ECE', 'roopac.vigi@gmail.com', 0, 2, 1, 3, 1, 7),
-(152, '212715106146', 'M SHANMUGA PRIYA', 'ECE', 'mee.spriya@gmail.com', 1, 1, 1, 1, 0, 4),
-(153, '212715106138', 'R J SANDEEP', 'ECE', 'sandeepr1097@gmail.com', 3, 1, 5, 2, 1, 12),
-(154, '212715106175', 'VIJAY M', 'ECE', 'maranvijay001@gmail.com', 2, 2, 2, 2, 0, 8),
-(155, '212715106166', 'UMESH R', 'ECE', 'umeshravichandirans@gmail.com', 1, 2, 4, 3, 1, 11),
-(156, '212715106169', 'VEMASANI SAIKUMAR', 'ECE', 'vemasanisaikumar@gmail.com', 4, 2, 1, 0, 0, 7),
-(157, '212715106180', 'R VISHVESH', 'ECE', 'vishvesh004@gmail.com', 4, 1, 4, 3, 2, 14),
-(158, '212715106156', 'T A P SRINIVAASAN', 'ECE', 'tapsrini@gmail.com', 3, 3, 3, 2, 1, 12),
-(159, '212715106330', 'YUVARAJ V V', 'ECE', 'yuvarajfalcon6464@gmail.com', 3, 2, 2, 1, 0, 8),
-(160, '212715106329', 'A VIJAY', 'ECE', 'vijay490650@gmail.com', 0, 0, 0, 0, 0, 0),
-(161, '212715103053', 'THANIGAI MURUGAN', 'CIVIL', 'thanigaimurugan624@gmail.com', 1, 3, 3, 1, 0, 8),
-(162, '212715103011', 'ELANGO', 'CIVIL', 'elangog19@gmail.com', 3, 5, 5, 0, 3, 16),
-(163, '212715103021', 'KR KARTHICK CHARAN', 'CIVIL', 'krcharan.karthick@gmail.com', 2, 2, 5, 4, 2, 15),
-(164, '212715103022', 'E KISHORE', 'CIVIL', 'elakismee@gmail.com', 2, 2, 3, 3, 2, 12),
-(165, '212715103015', 'HARIPRIYAA ARUL', 'CIVIL', 'haripriyaa1998@gmail.com', 5, 1, 1, 3, 2, 12),
-(166, '212715106128', 'R TILAK', 'ECE', 'tilak29081998@gmail.com', 3, 3, 3, 0, 2, 11),
-(167, '212715106329', 'A VIJAY', 'ECE', 'vijay490650@gmail.com', 3, 5, 1, 1, 3, 13),
-(168, '212715103008', 'K BHUVANESHWARI', 'CIVIL', 'bhuvanakk.2015@gmail.com', 0, 4, 5, 1, 0, 10),
-(169, '212715103045', 'K SIVANESH', 'CIVIL', 'siva127rocket@gmail.com', 1, 3, 3, 3, 3, 13),
-(170, '212715103004', 'A AKSHYA', 'CIVIL', 'akshuchweety98@gmail.com', 1, 2, 3, 0, 3, 9),
-(171, '212715106153', 'S SOWNTHIKA', 'ECE', 'sownthikas@gmail.com', 2, 5, 2, 3, 0, 12),
-(172, '212715106123', 'RAHUL R', 'ECE', 'rahulmanivasagan1@gmail.com', 3, 1, 5, 4, 1, 14),
-(173, '212715106178', 'VINODINI  N.P.', 'ECE', 'vinodini2597@gmail.com', 2, 2, 5, 4, 2, 15),
-(174, '212715106176', 'K VIJAYALAKSHMI', 'ECE', 'vijikannan2206@gmail.com', 4, 3, 2, 0, 2, 11),
-(175, '212715106165', 'THARINI L', 'ECE', 'tharafab28@gmail.com', 2, 3, 3, 2, 2, 12),
-(176, '212715106159', 'E SUBASHINI', 'ECE', 'suba21101998@gmail.com', 3, 3, 3, 4, 3, 16),
-(177, '212715106164', 'T SWETHA', 'ECE', 't.swetha293@gmail.com', 1, 2, 1, 3, 3, 10),
-(178, '212715106145', 'SHALINI S', 'ECE', 'shalinis1487@gmail.com', 2, 3, 3, 3, 0, 11),
-(179, '212715106154', 'SRESHTA KANNAN', 'ECE', 'sreshta.gk@gmail.com', 3, 4, 3, 3, 2, 15),
-(180, '212715106326', 'SUGANTHI E', 'ECE', 'suganthi0398@gmail.com', 2, 3, 1, 3, 1, 10),
-(181, '212715106172', 'VIDHYA SHREE K.R.', 'ECE', 'vidhyashreeravi98@gmail.com', 1, 2, 2, 3, 3, 11),
-(182, '212715106171', 'VIDHYA', 'ECE', 'vidhyaanbu29@gmail.com', 3, 3, 2, 2, 3, 13),
-(183, '212715103312', 'SATHISH K M', 'CIVIL', 'sathishkoneru16@gmail.com', 1, 3, 2, 1, 3, 10),
-(184, '212715103054', 'R UDAYA KUMAR', 'CIVIL', 'udaya4398@gmail.com', 1, 2, 4, 2, 1, 10),
-(185, '212715106152', 'SOLAI V', 'ECE', 'solaiabi98@gmail.com', 1, 2, 2, 0, 2, 7),
-(186, '212715106125', 'R R RAMIKSHA', 'ECE', 'rrramiksha@gmail.com', 1, 2, 2, 1, 1, 7),
-(187, '160501027', 'ARAVIND', 'CS', 'aravind1998@gmail.com', 0, 0, 0, 0, 0, 0),
-(188, '2222222222', 'ARJUN ARAVIND', 'CS', 'arjun.aravind1998@gmail.com', 0, 0, 0, 0, 0, 0);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `SET1`
---
-
-CREATE TABLE IF NOT EXISTS `SET1` (
-  `QUESTION_NO` int(3) NOT NULL AUTO_INCREMENT,
-  `QUESTION_TEXT` varchar(10000) DEFAULT NULL,
-  `OPTA` varchar(10000) DEFAULT NULL,
-  `OPTB` varchar(10000) DEFAULT NULL,
-  `OPTC` varchar(10000) DEFAULT NULL,
-  `OPTD` varchar(10000) DEFAULT NULL,
-  `PICTURE` varchar(100) NOT NULL,
-  PRIMARY KEY (`QUESTION_NO`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=26 ;
-
---
--- Dumping data for table `SET1`
---
-
-INSERT INTO `SET1` (`QUESTION_NO`, `QUESTION_TEXT`, `OPTA`, `OPTB`, `OPTC`, `OPTD`, `PICTURE`) VALUES
-(1, 'It comes as no surprise that societies have codes of behaviour; the character of the codes, on the other hand, can often be _______.<br><br>The options for the blank are as follows:-<br>A. predictable<br>B. unexpected<br>C. admirable<br>D. confusing<br><br>Choose the correct option.', 'A', 'B', 'C', 'D', 'NONE'),
-(2, 'Kagan maintains that an infant''s reactions to its first stressful experiences are part of a natural process of development, not harbingers of childhood unhappiness or ________ signs of adolescent anxiety.<br><br>Fill in the blanks.', 'prophetic', 'normal', 'monotonous', 'virtual', 'NONE'),
-(3, 'It is (i)______ that so many portrait paintings hang in art museums, since the subject matter seems to dictate a status closer to pictures in the family photograph album than to high art. But perhaps it is the artistic skill with which the portraits are painted that (ii)________ their presence in art museums.<br><br>Choose the correct option for blank (i).', 'surprising', 'understandable', 'irrelevant', 'None of the above.', 'NONE'),
-(4, 'It is (i)______ that so many portrait paintings hang in art museums, since the subject matter seems to dictate a status closer to pictures in the family photograph album than to high art. But perhaps it is the artistic skill with which the portraits are painted that (ii)________ their presence in art museums.<br><br>Choose the correct option for blank (ii).', 'challenges', 'justifies', 'changes', 'None of the above.', 'NONE'),
-(5, 'The image of the architect as the lonely artist drawing three-dimensional forms is (i)______ the public&apos;s understanding of the architect&apos;s role. As a result, buildings are viewed as the singular creations of an artistic vision (ii)______ the architect. Certainly, architects should take much of the credit for the form of a unique building, but the final product is hardly a (iii)______. The architect relies heavily upon facade consulants, engineers and skilled builders, while the form of a building may depend, in addition, upon zoning regulations, cost and market demands.<br><br>Options for blank(i) are:-<br>A. at odds with<br>B. central to<br>C. irrelevant to<br><br>Choose the correct option.', 'A', 'B', 'C', 'None of the above.', 'NONE'),
-(6, 'The image of the architect as the lonely artist drawing three-dimensional forms is (i)______ the public&apos;s understanding of the architect&apos;s role. As a result, buildings are viewed as the singular creations of an artistic vision (ii)______ the architect. Certainly, architects should take much of the credit for the form of a unique building, but the final product is hardly a (iii)______. The architect relies heavily upon facade consulants, engineers and skilled builders, while the form of a building may depend, in addition, upon zoning regulations, cost and market demands.<br><br>Options for blank(ii) are:-<br>A. tangentially related to<br>B. but an afterthought o<br>C. justifiably embodied by<br><br>Choose the correct option.', 'A', 'B', 'C', 'None of the above.', 'NONE'),
-(7, 'The image of the architect as the lonely artist drawing three-dimensional forms is (i)______ the public&apos;s understanding of the architect&apos;s role. As a result, buildings are viewed as the singular creations of an artistic vision (ii)______ the architect. Certainly, architects should take much of the credit for the form of a unique building, but the final product is hardly a (iii)______. The architect relies heavily upon facade consulants, engineers and skilled builders, while the form of a building may depend, in addition, upon zoning regulations, cost and market demands.<br><br>Options for blank(iii) are:-<br>A. virtuoso performance<br>B. collaborative effort<br>C. physical triumph<br><br>Choose the correct option.', 'A', 'B', 'C', 'None of the above.', 'NONE'),
-(8, 'The most striking thing asbout the politician is how often his politics have been (i)________ rather than ideological, as he adpts his political positions at any particular moment to the political realities that constrain him. He does not, however, piously (ii)______ political principles only to betray them in practice. Rather, he attempts in subtle ways to balance his political self-interest with a (iii)______, viewing himself as an instrument of some unchanging higher purpose.<br><br>Options for blank (i) are the following:-<br>A. quixotic<br>B. self-righteous<br>C. strategic<br><br>Choose the correct option.', 'A', 'B', 'C', 'None of the above.', 'NONE'),
-(9, 'The most striking thing asbout the politician is how often his politics have been (i)________ rather than ideological, as he adpts his political positions at any particular moment to the political realities that constrain him. He does not, however, piously (ii)______ political principles only to betray them in practice. Rather, he attempts in subtle ways to balance his political self-interest with a (iii)______, viewing himself as an instrument of some unchanging higher purpose.<br><br>Options for blank (ii) are the following:-<br>A. brandish<br>B. flout<br>C. follow<br><br>Choose the correct option.', 'A', 'B', 'C', 'None of the above.', 'NONE'),
-(10, 'The most striking thing about the politician is how often his politics have been (i)________ rather than ideological, as he adpts his political positions at any particular moment to the political realities that constrain him. He does not, however, piously (ii)______ political principles only to betray them in practice. Rather, he attempts in subtle ways to balance his political self-interest with a (iii)______, viewing himself as an instrument of some unchanging higher purpose.<br><br>Options for blank (iii) are the following:-<br>A. profound cynicism<br>B. deeply felt moral code<br>C. thoroughgoing pragmatism<br><br>Choose the correct option.', 'A', 'B', 'C', 'None of the above.', 'NONE'),
-(11, 'In a survey of 250 European travellers, 93 have travelled to Africa, 155 have travelled to Asia and of these two groups, 70 have travelled to both continents, as illustrated in the Venn diagrams below.<br><br>How many of the travellers surveyed have travelled to Africa but not Asia? ', '70', '37', '93', '23', 'one.jpg'),
-(12, 'In a survey of 250 European travellers, 93 have travelled to Africa, 155 have travelled to Asia and of these two groups, 70 have travelled to both continents, as illustrated in the Venn diagrams below.<br><br>How many of the travellers surveyed have travelled to at least one of the two continents of Africa and Asia?', '248', '178', '78', '93', 'one.jpg'),
-(13, 'In a survey of 250 European travellers, 93 have travelled to Africa, 155 have travelled to Asia and of these two groups, 70 have travelled to both continents, as illustrated in the Venn diagrams below.<br><br>How many of the travellers surveyed have travelled to neither Asia nor to Africa?', '72', '178', '210', '0', 'one.jpg'),
-(14, 'In a survey of 250 European travellers, 93 have travelled to Africa, 155 have travelled to Asia and of these two groups, 70 have travelled to both continents, as illustrated in the Venn diagrams below.<br><br>How many of the travellers surveyed have travelled to Asia only?', '85', '195', '210', '198', 'one.jpg'),
-(15, 'In a survey of 250 European travellers, 93 have travelled to Africa, 155 have travelled to Asia and of these two groups, 70 have travelled to both continents, as illustrated in the Venn diagrams below.<br><br>How many of the travellers surveyed have travelled to Africa only?', '23', '70', '153', '178', 'one.jpg'),
-(16, 'Which of the following is equal to the number of hours spent on Physics?', 'Hours spent on Physics in class and on History in class.', 'Hours spent on Maths at home.', 'Hours spent on Maths in class.', 'Hours spent on History at home and Physics at home.', 'two.jpg'),
-(17, 'Approximately what percent of the hours is spent on learning in class?', '20%', '32%', '45%', '65%', 'two.jpg'),
-(18, 'The total number of hours spent on learning the subjects at home is nearest to which of the following:-', 'The Prescribed hours for Math.', 'The total hours spent on History.', 'The sum of the prescribed hours at home for Physics and prescribed hours in class for History.', 'None of the above.', 'two.jpg'),
-(19, 'Which of the following accounts for approximately 50% of the total number of hours spent in studying all three subjects?', 'Physics', 'Math', 'History', 'None of the above', 'two.jpg'),
-(20, 'If half the number of hours spent in class is utilised at home, then the percentage of Math done in class would be approximately what percentage of the total number of hours spent in studying math?', '33%', '50%', '66%', '75%', 'two.jpg'),
-(21, 'The ratio of <i>a</i> to <i>b</i> is 3 to 4.<br><br>Quantity A &minus; (<i>a</i>+1)/(<i>b</i>+1)<br>Quantity B is 4/5<br><br>Choose the correct option.', 'Quantity A is greater.', 'Quantity B is greater.', 'The two quantities are equal.', 'Their relationship cannot be determined from the information given.', 'NONE'),
-(22, 'In the figure below, triangle STU is inscribed in a circle. the measure of the angle STU is greater than 85&deg; and less than 95&deg;, and the area of the circle is 36&pi;.<br><br>Quantity A &minus; The length of line segment SU.<br>Quantity B &minus; 12<br><br>Choose the correct option.', 'Quantity A is greater.', 'Quantity B is greater.', 'The two quantities are equal.', 'Their relationship cannot be determined from the information given.', 'three.jpg'),
-(23, 'The diagonals of square T intersect at the point (-3, 3) in the xy-plane. One of the vertices of square T is at the point (-11/2, -11/2).<br><br>Quantity A &minus; 25<br>Quantity B &minus; The area of T<br><br>CHoose the correct option.', 'Quantity A is greater.', 'Quantity B is greater.', 'The two quantities are equal.', 'Their relationship cannot be determined from the information given.', 'NONE'),
-(24, 'x = y + 1/2<br><br>Quantity A &minus; x<sup>2</sup> - 2xy + y<sup>2</sup><br>Quantity B &minus; x-y<br><br>Choose the correct option.', 'Quantity A is greater.', 'Quantity B is greater.', 'The two quantities are equal.', 'Their relationship cannot be determined from the information given.', 'NONE'),
-(25, 'There are five runners in a race.<br><br>Quantity A &minus; 10<br>Quantity B &minus; The total number of arrangements for the runners from first place to third place.<br><br>Choose the correct option.', 'Quantity A is greater.', 'Quantity b is greater.', 'The two quantities are equal.', 'Their relationship cannot be determined from the given information.', 'NONE');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `SET2`
---
-
-CREATE TABLE IF NOT EXISTS `SET2` (
-  `QUESTION_NO` int(3) NOT NULL AUTO_INCREMENT,
-  `QUESTION_TEXT` varchar(10000) DEFAULT NULL,
-  `OPTA` varchar(200) NOT NULL,
-  `OPTB` varchar(10000) DEFAULT NULL,
-  `OPTC` varchar(10000) DEFAULT NULL,
-  `OPTD` varchar(10000) DEFAULT NULL,
-  `PICTURE` varchar(100) NOT NULL,
-  PRIMARY KEY (`QUESTION_NO`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=26 ;
-
---
--- Dumping data for table `SET2`
---
-
-INSERT INTO `SET2` (`QUESTION_NO`, `QUESTION_TEXT`, `OPTA`, `OPTB`, `OPTC`, `OPTD`, `PICTURE`) VALUES
-(1, 'It comes as no surprise that societies have codes of behaviour; the character of the codes, on the other hand, can often be _______.<br><br>The options for the blank are as follows:-<br>A. predictable<br>B. unexpected<br>C. admirable<br>D. confusing<br><br>Choose the correct option.', 'A', 'B', 'C', 'D', 'NONE'),
-(2, 'Kagan maintains that an infant''s reactions to its first stressful experiences are part of a natural process of development, not harbingers of childhood unhappiness or ________ signs of adolescent anxiety.<br><br>Fill in the blanks.', 'prophetic', 'normal', 'monotonous', 'virtual', 'NONE'),
-(3, 'It is (i)______ that so many portrait paintings hang in art museums, since the subject matter seems to dictate a status closer to pictures in the family photograph album than to high art. But perhaps it is the artistic skill with which the portraits are painted that (ii)________ their presence in art museums.<br><br>Choose the correct option for blank (i).', 'surprising', 'understandable', 'irrelevant', 'None of the above.', 'NONE'),
-(4, 'It is (i)______ that so many portrait paintings hang in art museums, since the subject matter seems to dictate a status closer to pictures in the family photograph album than to high art. But perhaps it is the artistic skill with which the portraits are painted that (ii)________ their presence in art museums.<br><br>Choose the correct option for blank (ii).', 'challenges', 'justifies', 'changes', 'None of the above.', 'NONE'),
-(5, 'The reviewer gave the new bistro a (i)_______ review, claiming that while the food was innovative and well executed, the service and decor were (ii)________.<br><br>Choose the correct option for blank (i).', 'Glowing', 'Scathed', 'Guarded', 'Burnt', 'NONE'),
-(6, 'The reviewer gave the new bistro a (i)_______ review, claiming that while the food was innovative and well executed, the service and decor were (ii)________.<br><br>Choose the correct option for blank (ii).', 'inappropriate', 'stunning', 'lackluster', 'glamourous', 'NONE'),
-(7, 'One of the most salient (i)_______ of travel is the ability to understand one''s own culture from a different perspective; it is often not until we encounter a (ii)______ way of life that we realise that what is normal to us is merely the result of enculturation, not an innate, not an innate correctness as it may have previously seemed. It is through this (iii)______ that alternative customs from other regions can be seen not as inferior or bizarre but as equally valid traditions that are no less natural than ours.<br><br>Choose the correct option for blank (i).', 'benefits', 'relaxations', 'drawbacks', 'zeal', 'NONE'),
-(8, 'One of the most salient (i)_______ of travel is the ability to understand one''s own culture from a different perspective; it is often not until we encounter a (ii)______ way of life that we realise that what is normal to us is merely the result of enculturation, not an innate, not an innate correctness as it may have previously seemed. It is through this (iii)______ that alternative customs from other regions can be seen not as inferior or bizarre but as equally valid traditions that are no less natural than ours.<br><br>Choose the correct option for blank (ii).', 'baffling', 'dissimilar', 'complementary', 'zeal', 'NONE'),
-(9, 'One of the most salient (i)_______ of travel is the ability to understand one''s own culture from a different perspective; it is often not until we encounter a (ii)______ way of life that we realise that what is normal to us is merely the result of enculturation, not an innate, not an innate correctness as it may have previously seemed. It is through this (iii)______ that alternative customs from other regions can be seen not as inferior or bizarre but as equally valid traditions that are no less natural than ours.<br><br>Choose the correct option for blank (iii).', 'realisation', 'bewilderment', 'zeal', 'complementary', 'NONE'),
-(10, 'Persevering despite hundreds of ________ attempts to produce a working light bulb, Edison eventually triumphed, tenacity contributing to his consequent success.<br><br>Fill in the blank.', 'constructive', 'fruitless', 'auspicious', 'haphazard', 'NONE'),
-(11, 'In a survey of 250 European travellers, 93 have travelled to Africa, 155 have travelled to Asia and of these two groups, 70 have travelled to both continents, as illustrated in the Venn diagrams below.<br><br>How many of the travellers surveyed have travelled to Africa but not Asia?', '70', '37', '93', '23', 'one.jpg'),
-(12, 'In a survey of 250 European travellers, 93 have travelled to Africa, 155 have travelled to Asia and of these two groups, 70 have travelled to both continents, as illustrated in the Venn diagrams below.<br><br>How many of the travellers surveyed have travelled to at least one of the two continents of Africa and Asia?', '248', '178', '78', '93', 'one.jpg'),
-(13, 'In a survey of 250 European travellers, 93 have travelled to Africa, 155 have travelled to Asia and of these two groups, 70 have travelled to both continents, as illustrated in the Venn diagrams below.<br><br>How many of the travellers surveyed have travelled to neither Asia nor to Africa?', '72', '178', '210', '0', 'one.jpg'),
-(14, 'In a survey of 250 European travellers, 93 have travelled to Africa, 155 have travelled to Asia and of these two groups, 70 have travelled to both continents, as illustrated in the Venn diagrams below.<br><br>How many of the travellers surveyed have travelled to Asia only?', '85', '195', '210', '198', 'one.jpg'),
-(15, 'In a survey of 250 European travellers, 93 have travelled to Africa, 155 have travelled to Asia and of these two groups, 70 have travelled to both continents, as illustrated in the Venn diagrams below.<br><br>How many of the travellers surveyed have travelled to Africa only?', '23', '70', '153', '178', 'one.jpg'),
-(16, 'What was the average rate of warming in the northern hemisphere?', '0.4 degrees Celsius per decade', '0.04 degrees Celsius per decade', '0.004 degrees Celsius per decade', '0.0004 degrees Celsius per decade', 'two.jpg'),
-(17, 'What was the widest range in average temperature during the decades between 1940 and 2000, and in which hemisphere did it occur?', '0.1 degrees in the northern hemisphere', '0.15 degrees in the southern hemisphere', '0.2 degrees in the northern hemisphere', '0.25 degrees in the northern hemisphere', 'two.jpg'),
-(18, 'What was the increase in CFC concentration in the northern hemisphere from 1940 to 2000?', '4.5 parts per million', '5 parts per million', '5.5 parts per million', '6 parts per million', 'two.jpg'),
-(19, 'For how many decades did the CFC concentration and average temperature of the southern hemisphere simultaneously decrease?', '0', '1', '2', '3', 'two.jpg'),
-(20, 'What was the CFC concentration in the northern hemisphere in 1970?', '2.2 parts per million', '2.8 parts per million', '3.0 parts per million', '3.5 parts per million', 'two.jpg'),
-(21, 'The ratio of <i>a</i> to <i>b</i> is 3 to 4.<br><br>Quantity A &minus; (<i>a</i>+1)/(<i>b</i>+1)<br>Quantity B is 4/5<br><br>Choose the correct option.', 'Quantity A is greater.', 'Quantity B is greater.', 'The two quantities are equal.', 'Their relationship cannot be determined from the information given.', 'NONE'),
-(22, 'In the figure below, triangle STU is inscribed in a circle. the measure of the angle STU is greater than 85&deg; and less than 95&deg;, and the area of the circle is 36&pi;.<br><br>Quantity A &minus; The length of line segment SU.<br>Quantity B &minus; 12<br><br>Choose the correct option.', 'Quantity A is greater.', 'Quantity B is greater.', 'The two quantities are equal.', 'Their relationship cannot be determined from the information given.', 'three.jpg'),
-(23, 'The diagonals of square T intersect at the point (-3, 3) in the xy-plane. One of the vertices of square T is at the point (-11/2, -11/2).<br><br>Quantity A &minus; 25<br>Quantity B &minus; The area of T<br><br>CHoose the correct option.', 'Quantity A is greater.', 'Quantity B is greater.', 'The two quantities are equal.', 'Their relationship cannot be determined from the information given.', 'NONE'),
-(24, 'x = y + 1/2<br><br>Quantity A &minus; x<sup>2</sup> - 2xy + y<sup>2</sup><br>Quantity B &minus; x-y<br><br>Choose the correct option.', 'Quantity A is greater.', 'Quantity B is greater.', 'The two quantities are equal.', 'Their relationship cannot be determined from the information given.', 'NONE'),
-(25, 'There are five runners in a race.<br><br>Quantity A &minus; 10<br>Quantity B &minus; The total number of arrangements for the runners from first place to third place.<br><br>Choose the correct option.', 'Quantity A is greater.', 'Quantity b is greater.', 'The two quantities are equal.', 'Their relationship cannot be determined from the given information.', 'NONE');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `SET3`
---
-
-CREATE TABLE IF NOT EXISTS `SET3` (
-  `QUESTION_NO` int(3) NOT NULL AUTO_INCREMENT,
-  `QUESTION_TEXT` varchar(10000) DEFAULT NULL,
-  `OPTA` varchar(200) NOT NULL,
-  `OPTB` varchar(10000) DEFAULT NULL,
-  `OPTC` varchar(10000) DEFAULT NULL,
-  `OPTD` varchar(10000) DEFAULT NULL,
-  `PICTURE` varchar(100) NOT NULL,
-  PRIMARY KEY (`QUESTION_NO`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=26 ;
-
---
--- Dumping data for table `SET3`
---
-
-INSERT INTO `SET3` (`QUESTION_NO`, `QUESTION_TEXT`, `OPTA`, `OPTB`, `OPTC`, `OPTD`, `PICTURE`) VALUES
-(1, 'In stark contrast to his later (i)________, Simpson was largely (ii)________ politics during his college years, despite the fact that the campus he attended was rife with political activity.<br><br>Choose the correct option for blank (i).', 'activism', 'apathy', 'affability', 'None of the above.', 'NONE'),
-(2, 'In stark contrast to his later (i)________, Simpson was largely (ii)________ politics during his college years, despite the fact that the campus he attended was rife with political activity.<br><br>Choose the correct option for blank (ii).', 'devoted to', 'indifferent to', 'shaped by', 'None of the above.', 'NONE'),
-(3, 'As my eyesight began to ______, I spent a lot of time writing about it &minus; both poems and &apos;eye journals&apos; &minus; describing what I saw as I looked out through damaged eyes.<br><br>Fill in the blank.', 'deteriorate', 'sharpen', 'improve', 'decline', 'NONE'),
-(4, 'The judge''s standing in the legal community, though shaken by \nphony allegations of wrongdoing, emerged, at long last, _______.<br><br>Fill in the blank.', 'undamaged', 'unresolved', 'unqualified', 'undecided', 'NONE'),
-(5, 'The image of the architect as the lonely artist drawing three-dimensional forms is (i)______ the public&apos;s understanding of the architect&apos;s role. As a result, buildings are viewed as the singular creations of an artistic vision (ii)______ the architect. Certainly, architects should take much of the credit for the form of a unique building, but the final product is hardly a (iii)______. The architect relies heavily upon facade consulants, engineers and skilled builders, while the form of a building may depend, in addition, upon zoning regulations, cost and market demands.<br><br>Options for blank(i) are:-<br>A. at odds with<br>B. central to<br>C. irrelevant to<br><br>Choose the correct option.', 'A', 'B', 'C', 'None of the above.', 'NONE'),
-(6, 'The image of the architect as the lonely artist drawing three-dimensional forms is (i)______ the public&apos;s understanding of the architect&apos;s role. As a result, buildings are viewed as the singular creations of an artistic vision (ii)______ the architect. Certainly, architects should take much of the credit for the form of a unique building, but the final product is hardly a (iii)______. The architect relies heavily upon facade consulants, engineers and skilled builders, while the form of a building may depend, in addition, upon zoning regulations, cost and market demands.<br><br>Options for blank(ii) are:-<br>A. tangentially related to<br>B. but an afterthought o<br>C. justifiably embodied by<br><br>Choose the correct option.', 'A', 'B', 'C', 'None of the above.', 'NONE'),
-(7, 'The image of the architect as the lonely artist drawing three-dimensional forms is (i)______ the public&apos;s understanding of the architect&apos;s role. As a result, buildings are viewed as the singular creations of an artistic vision (ii)______ the architect. Certainly, architects should take much of the credit for the form of a unique building, but the final product is hardly a (iii)______. The architect relies heavily upon facade consulants, engineers and skilled builders, while the form of a building may depend, in addition, upon zoning regulations, cost and market demands.<br><br>Options for blank(iii) are:-<br>A. virtuoso performance<br>B. collaborative effort<br>C. physical triumph<br><br>Choose the correct option.', 'A', 'B', 'C', 'None of the above.', 'NONE'),
-(8, 'The most striking thing asbout the politician is how often his politics have been (i)________ rather than ideological, as he adpts his political positions at any particular moment to the political realities that constrain him. He does not, however, piously (ii)______ political principles only to betray them in practice. Rather, he attempts in subtle ways to balance his political self-interest with a (iii)______, viewing himself as an instrument of some unchanging higher purpose.<br><br>Options for blank (i) are the following:-<br>A. quixotic<br>B. self-righteous<br>C. strategic<br><br>Choose the correct option.', 'A', 'B', 'C', 'None of the above.', 'NONE'),
-(9, 'The most striking thing asbout the politician is how often his politics have been (i)________ rather than ideological, as he adpts his political positions at any particular moment to the political realities that constrain him. He does not, however, piously (ii)______ political principles only to betray them in practice. Rather, he attempts in subtle ways to balance his political self-interest with a (iii)______, viewing himself as an instrument of some unchanging higher purpose.<br><br>Options for blank (ii) are the following:-<br>A. brandish<br>B. flout<br>C. follow<br><br>Choose the correct option.', 'A', 'B', 'C', 'None of the above.', 'NONE'),
-(10, 'The most striking thing about the politician is how often his politics have been (i)________ rather than ideological, as he adpts his political positions at any particular moment to the political realities that constrain him. He does not, however, piously (ii)______ political principles only to betray them in practice. Rather, he attempts in subtle ways to balance his political self-interest with a (iii)______, viewing himself as an instrument of some unchanging higher purpose.<br><br>Options for blank (iii) are the following:-<br>A. profound cynicism<br>B. deeply felt moral code<br>C. thoroughgoing pragmatism<br><br>Choose the correct option.', 'A', 'B', 'C', 'None of the above.', 'NONE'),
-(11, 'Approximately how many complaints concerning credit were received by Airline P in 2003?', '10', '230', '19', '1998', 'one.jpg'),
-(12, 'By approximately what percent did the total number of complaints decrease from 2003 to 2004?', '98', '29', '57', '42', 'one.jpg'),
-(13, 'Based on the information given in the table, which of the following statements are true?<br><br>A) In each of the years 2003 and 2004, complaints about flight problems, baggage and customer service together accounted for more than 50 percent of all customer complaints received by Airline P.<br>B) The number of special passenger accommodation complaints was unchanged from 2003 to 2004.<br>C) From 2003 to 2004, the number of flight problem complaints increased by more than 2 percent.<br><br>Choose the correct option.', 'A and B', 'Only A', 'A, B and C', 'C', 'one.jpg'),
-(14, 'Which of the following categories received the least number of complaints in 2003?', 'Advertising', 'Credit', 'Special Passenger Accomodation', 'Fare', 'one.jpg'),
-(15, 'The number of complaints for Flight Problems for Airline P increased in 2004 compared to 2003.<br><br>Based on the information in the table, is the previous statement true?<br><br>Choose the correct option.', 'True', 'False', 'None of the above.', 'None of the above.', 'one.jpg'),
-(16, 'Which of the following is equal to the number of hours spent on Physics?', 'Hours spent on Physics in class and on History in class.', 'Hours spent on Maths at home.', 'Hours spent on Maths in class.', 'Hours spent on History at home and Physics at home.', 'two.jpg'),
-(17, 'Approximately what percent of the hours is spent on learning in class?', '20%', '32%', '45%', '65%', 'two.jpg'),
-(18, 'The total number of hours spent on learning the subjects at home is nearest to which of the following:-', 'The Prescribed hours for Math.', 'The total hours spent on History.', 'The sum of the prescribed hours at home for Physics and prescribed hours in class for History.', 'None of the above.', 'two.jpg'),
-(19, 'Which of the following accounts for approximately 50% of the total number of hours spent in studying all three subjects?', 'Physics', 'Math', 'History', 'None of the above', 'two.jpg'),
-(20, 'If half the number of hours spent in class is utilised at home, then the percentage of Math done in class would be approximately what percentage of the total number of hours spent in studying math?', '33%', '50%', '66%', '75%', 'two.jpg'),
-(21, 'A circle is inscribed in a square with sides of length 5.<br><br>Quantity A &minus; The circumference of the circle<br>Quantity B &minus; 15<br><br>Choose the correct option. ', 'Quantity A is greater.', 'Quantity B is greater.', 'The two quantities are equal.', 'Their relationship cannot be determined from the info given.', 'NONE'),
-(22, '<br><br>2<i>u</i> + <i>v</i> = 14<br><i>uv</i> = 0<br><br>Quantity A &minus; <i>u</i><br>Quantity B &minus; <i>v</i><br><br>Choose the correct option.', 'Quantity A is greater.', 'Quantity B is greater.', 'The two quantities are equal.', 'Their relationship cannot be determined from the info given.', 'NONE'),
-(23, '<br><br>Quantity A &minus; 950^<sup>2000</sup><br>Quantity B &minus; 10^<sup>6000</sup><br><br>Choose the correct option.', 'Quantity A is greater.', 'Quantity B is greater.', 'The two quantities are equal.', 'Their relationship cannot be determined from the info given.', 'NONE'),
-(24, 'Set A consists of 40 integers and Set B consists of 150 integers. The number of integers that are in both Set A and Set B is 20.<br><br>Quantity A &minus; The total number of integers that are in Set A or Set B or both.<br>Quantity B &minus; 170<br><br>Choose the correct option.', 'Quantity A is greater.', 'Quantity B is greater.', 'The two quantities are equal.', 'Their relationship cannot be determined from the info given.', 'NONE'),
-(25, '<i>x</i> is a negative integer.<br><br>Quantity A &minus; 2<sup><i>x</i></sup><br>Quantity B &minus; 3<sup><i>x</i>+1</sup><br><br>Choose the correct option.', 'Quantity A is greater.', 'Quantity B is greater.', 'The two quantities are equal.', 'The relationship cannot be determined from the information given.', 'NONE');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

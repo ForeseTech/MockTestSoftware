@@ -1,0 +1,4 @@
+#Important Notes about the SQL Schema in this folder:-
+	i) The schema titled 'MOCKS' is the schema with the complete structure and data of the original database.
+	ii) The schemas titled 'SCORES1A', 'SCORES1B', etc, are schemas from every stage of the mock tests. 1A is 1st day - batch A and 1B is 1st day - batch B, etc etc.
+	iii) These are very important. Cannot be deleted.
