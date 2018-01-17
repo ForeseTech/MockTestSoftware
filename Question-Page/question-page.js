@@ -1,5 +1,5 @@
 /* Timer JavaScript */
-var timerMinute=29;
+var timerMinute=31;
 var timerSecond=60;
 
 window.setInterval(changeTimer, 1000);
