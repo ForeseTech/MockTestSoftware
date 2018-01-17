@@ -1,3 +1,7 @@
+/*
+	This file deletes any existing data in the LOGIN table and sets everything back to the default values.
+*/
+
 <?php
 function setConn(){
 	$servername="localhost";

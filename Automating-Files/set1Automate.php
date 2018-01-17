@@ -1,3 +1,7 @@
+/*
+	This file can be used to transfer a bulk amount of data between two chosen tables.
+*/
+
 <?php
 
 function setConn(){

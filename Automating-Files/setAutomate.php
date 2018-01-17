@@ -1,3 +1,7 @@
+/*
+	This file was used to automate the process of transferring data from the 'questions' table to one of the set tables. This file may have no use anymore since the 'questions' table is out of the question.
+*/
+
 <?php
 
 $q=$_REQUEST['q'];

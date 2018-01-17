@@ -1,3 +1,7 @@
+/*
+	This file automates the process of transferring data from the LOGIN table to the SCORES table. This is done so that the LOGIN table remains clean. All the scores are present neatly in the SCORES table.
+*/
+
 <?php
 
 function setConn(){

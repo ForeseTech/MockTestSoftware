@@ -1,3 +1,7 @@
+/*
+	This file makes use of the 'dompdf' PHP library and renders the inputted HTML in PDF.
+*/
+
 <?php
 require_once 'dompdf/lib/html5lib/Parser.php';
 require_once 'dompdf/lib/php-font-lib/src/FontLib/Autoloader.php';
