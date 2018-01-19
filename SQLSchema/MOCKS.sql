@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Jan 18, 2018 at 06:48 AM
+-- Generation Time: Jan 19, 2018 at 08:50 AM
 -- Server version: 5.6.36-cll-lve
 -- PHP Version: 5.6.30
 
@@ -19,6 +19,20 @@ SET time_zone = "+00:00";
 --
 -- Database: `MOCKS18`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `COMMENTS`
+--
+
+CREATE TABLE IF NOT EXISTS `COMMENTS` (
+  `COMMENT_NO` int(11) NOT NULL AUTO_INCREMENT,
+  `COMMENT_REG` varchar(100) NOT NULL,
+  `COMMENT_TEXT` varchar(5000) NOT NULL,
+  `COMMENT_RATINGS` int(11) NOT NULL,
+  PRIMARY KEY (`COMMENT_NO`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1068,13 +1082,14 @@ CREATE TABLE IF NOT EXISTS `SCORES` (
   `SEC5` int(11) NOT NULL,
   `TOTAL` int(11) DEFAULT NULL,
   PRIMARY KEY (`STUD_NO`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=333 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=454 ;
 
 --
 -- Dumping data for table `SCORES`
 --
 
 INSERT INTO `SCORES` (`STUD_NO`, `REG_NO`, `NAME`, `DEPT`, `EMAIL`, `SEC1`, `SEC2`, `SEC3`, `SEC4`, `SEC5`, `TOTAL`) VALUES
+(333, '212715105060', 'NANDHINI RAVI', 'EEE', 'ravi.is.sowmya@gmail.com', 2, 2, 3, 1, 2, 10),
 (143, '212715106129', 'RISHEEIK BHARADWAJ JR', 'ECE', 'batman.robin98@gmail.com', 3, 3, 4, 3, 1, 14),
 (144, '212715106160', 'SUBATHRA K', 'ECE', 'subathrakalaiyarasi@gmail.com', 4, 2, 2, 1, 1, 10),
 (145, '212715106142', 'SELVA SUDHA S', 'ECE', 'selva_sudha97@yahoo.in', 2, 2, 3, 2, 2, 11),
@@ -1213,6 +1228,7 @@ INSERT INTO `SCORES` (`STUD_NO`, `REG_NO`, `NAME`, `DEPT`, `EMAIL`, `SEC1`, `SEC
 (279, '212715104125', 'SANJAYE J', 'CS', 'sanjayejayachandar@hotmail.com', 2, 2, 3, 1, 0, 8),
 (280, '212715104164', 'VENKATESH  M', 'CS', 'venkyvenkatesh2406@gmail.com', 3, 3, 2, 2, 0, 10),
 (281, '212715104155', 'T NAGA SAI NIKHIL', 'CS', 'nikhilt971@gmail.com', 2, 4, 3, 2, 1, 12),
+(335, '212715105070', 'E.PRIYANKA ', 'EEE', 'evspriya@gmail.com', 2, 2, 1, 1, 1, 7),
 (283, '212715104123', 'PRANEETH AVAPATI', 'CS', 'praneeth919@gmail.com', 2, 3, 1, 1, 2, 9),
 (284, '212715104157', 'UMAMAHESHWARI E', 'CS', 'umamaheshwariethurajan@gmail.com', 2, 2, 1, 2, 2, 9),
 (285, '212715104149', 'SWETHA.M', 'CS', 'swethamb.289@gmail.com', 2, 3, 4, 1, 1, 11),
@@ -1225,6 +1241,7 @@ INSERT INTO `SCORES` (`STUD_NO`, `REG_NO`, `NAME`, `DEPT`, `EMAIL`, `SEC1`, `SEC
 (292, '212715104177', 'YUVASRI S', 'CS', 'yuvasri9176@gmail.com', 3, 1, 1, 1, 2, 8),
 (293, '212715104119', 'R.ROHIT', 'CS', 'Rrohitrh72@gmail.com', 3, 4, 5, 2, 1, 15),
 (294, '212715104076', 'MANYAM NANDINI', 'CS', 'mnandini254@gamil.com', 1, 3, 2, 3, 2, 11),
+(334, '212715105054', 'MOHAMMED GHOUSE S', 'EEE', 'ghouseshadhik@gmail.com', 0, 0, 0, 0, 0, 0),
 (296, '212715104061', 'KAPIDRAN.K', 'CS', 'kkapindran@gmail.com', 3, 4, 3, 4, 3, 17),
 (297, '2127115104087', 'NANDAGOPAL SRIDHAR', 'CS', 'nandu.sridhar17@gmail.com', 0, 2, 1, 0, 0, 3),
 (298, '212715104121', 'RUBINA.Z', 'CS', 'rubinazahirhussain2525@gmail.com', 3, 1, 4, 2, 1, 11),
@@ -1261,7 +1278,123 @@ INSERT INTO `SCORES` (`STUD_NO`, `REG_NO`, `NAME`, `DEPT`, `EMAIL`, `SEC1`, `SEC
 (329, '212715104092', 'NITHYUSHA CHINNI', 'CS', 'nithyushachinni@gmail.com', 2, 3, 2, 1, 1, 9),
 (330, '212715104093', 'R.NITHYAN', 'CS', 'nithinzetlog@yahoo.co.in', 2, 2, 4, 1, 1, 10),
 (331, '212715104091', 'NISHANK.P', 'CS', 'nishankrko115@gmail.com', 4, 3, 3, 2, 2, 14),
-(332, '212715104112', 'RADHIKA JAYARAJ', 'CS', 'rjhere123@gmail.com', 5, 3, 3, 4, 2, 17);
+(332, '212715104112', 'RADHIKA JAYARAJ', 'CS', 'rjhere123@gmail.com', 5, 3, 3, 4, 2, 17),
+(336, '212715105069', 'M.PREMKUMAR', 'EEE', 'mpremkumar96@gmail.com', 3, 2, 1, 2, 4, 12),
+(337, '212715105062', 'NAVEENKUMAR K H', 'EEE', 'khnaveenkumar1998@gmail.com', 1, 1, 5, 3, 1, 11),
+(338, '212715105057', 'MONIESH RAJ S', 'EEE', 'monieshraj97@ieee.org', 3, 2, 3, 4, 1, 13),
+(339, '212715105077', 'M.R.SABARI CHANDER', 'CS', 'sabrocknroll@gmail.com', 2, 3, 3, 5, 3, 16),
+(340, '212715105065', 'G.NIVETHA', 'EEE', 'nivethags1997@gmail', 3, 2, 5, 2, 2, 14),
+(341, '212715105066', 'P SAI MANOJ', 'EEE', 'saimanoj888.sm@gmail.com', 2, 2, 4, 1, 1, 10),
+(342, '212715105081', 'N.SAI SRINIVAS', 'EEE', 'saisrinivasnennuru@gmail.com', 0, 0, 0, 0, 0, 0),
+(343, '212715105067', 'V.PRAVEEN', 'EEE', 'vpraveen51197@gmail.com', 2, 3, 3, 2, 1, 11),
+(344, '212715105068', 'PRAVEEN KUMAR R', 'EEE', 'pravinkumar14021998@gmail.com', 1, 5, 3, 1, 0, 10),
+(345, '212715105072', 'R.RAGHAVI', 'EEE', 'raghavi031097@gmail.com', 2, 3, 3, 0, 1, 9),
+(346, '212715105312', 'MAGESH', 'EEE', 'mageshrathinam877@gmail.com', 2, 0, 1, 3, 2, 8),
+(347, '212715105081', 'N.SAI SRINIVAS', 'EEE', 'saisrinivasnennuru@gmail.com', 2, 1, 3, 2, 2, 10),
+(348, '212715105054', 'MOHAMMED GHOUSE S', 'EEE', 'ghouseshadhik@gmail.com', 4, 2, 5, 3, 3, 17),
+(349, '212715105076', 'G.S.RAMYA', 'EEE', 'srinigs1971@gmail.com', 1, 3, 5, 2, 2, 13),
+(350, '212715214013', 'NK ISHWARYA', 'BIO', 'nkishwarya@gmail.com', 4, 3, 3, 3, 2, 15),
+(351, '212715105020', 'ATHISH KRISHNA M', 'EEE', 'athishmk1997@gmail.com', 2, 1, 5, 4, 5, 17),
+(352, '212715105215', 'GIRI', 'CS', 'girideepak@gmail.com', 0, 0, 0, 0, 0, 0),
+(353, '212715214018', 'KAUSHIK VIKRAM .B', 'BIO', 'kaushikvikrambalaji@gmail.com', 0, 0, 0, 0, 0, 0),
+(354, '212715214005', 'ARTHI U', 'BIO', 'arthiudhayachandran@gmail.com', 1, 2, 1, 2, 2, 8),
+(355, '212715214023', 'MEENA A', 'BIO', 'meenabiotech18@gmail.com', 1, 3, 3, 1, 1, 9),
+(356, '212715214020', 'J LAVANYA', 'BIO', 'lavanya0332@gmail.com', 1, 2, 2, 3, 3, 11),
+(357, '212715214004', 'ARIVEZHIL D', 'BIO', 'arivezhild@gmail.com', 4, 1, 1, 1, 0, 7),
+(358, '212715214022', 'MAHALAKSHMI V', 'BIO', 'maha515lakshmi@gmail.com', 4, 3, 3, 2, 1, 13),
+(359, '212715214021', 'D. LOKAPRIYA', 'BIO', 'lokapriya.smart@gmail.com', 2, 4, 3, 2, 0, 11),
+(360, '212715214014', 'J.JAYASRI', 'BIO', 'jayasrijayaramanbiotech@gmail.com', 0, 3, 2, 4, 1, 10),
+(361, '212715214008', 'CHELLA MAHADEV SWETHA', 'BIO', 'swethujan19@gmail.com', 3, 5, 3, 0, 0, 11),
+(362, '212715214007', 'R.BAVADHARINI', 'BIO', 'bavaramesh8@gmail.com', 1, 3, 2, 1, 1, 8),
+(363, '212715214002', 'A AKILAN', 'BIO', 'akilan2905@gmail.com', 0, 1, 3, 0, 1, 5),
+(364, '212715214017', 'KARTHIKEYAN K R', 'BIO', 'krkarthikeyan56@gmail.com', 4, 5, 5, 4, 3, 21),
+(365, '212715214020', 'N HAMSIKHA', 'BIO', 'nhamsikha@gmail.com', 2, 5, 5, 2, 0, 14),
+(366, '212715214012', 'ISHVARYA NARAYANAN', 'BIO', 'ishvaryanarayanan@gmail.com', 3, 1, 3, 2, 2, 11),
+(367, '212715214018', 'KAUSHIK VIKRAM .B', 'BIO', 'kaushikvikrambalaji@gmail.com', 3, 2, 3, 2, 2, 12),
+(368, '212715214024', 'MUKESH B', 'BIO', 'xdmukesh@gmail.com', 2, 3, 4, 3, 2, 14),
+(369, '212715214001', 'AISHWARYA THYAGARAJAN', 'BIO', 'aishthyagu@gmail.com', 3, 3, 4, 2, 3, 15),
+(370, '212715214029', 'RAJENDRSA KUMAR R R', 'BIO', 'rajendra.sudhan20@gmail.com', 2, 2, 5, 3, 4, 16),
+(371, '212715214031', 'RUPESH BALAJI.J', 'BIO', 'rupesh.661998@gmail.com', 3, 5, 2, 4, 1, 15),
+(372, '212715214033', 'SANKARI.M', 'BIO', 'sankariabi228@gmail.com', 3, 2, 1, 3, 2, 11),
+(373, '212715214035', 'SELVA SUNDARI.M', 'BIO', 'ssajitha1997@gmail.com', 3, 1, 3, 3, 2, 12),
+(374, '212715214028', 'PRIANKA M', 'BIO', 'prianka.sumi@gmail.com', 2, 2, 4, 2, 4, 14),
+(375, '212715214030', 'RAMYA.S', 'BIO', 'ramya100598@gmail.com', 1, 2, 2, 2, 1, 8),
+(376, '212715214043', 'SUVEDHA.K', 'BIO', 'sue.seven@gmail.com', 3, 2, 5, 2, 2, 14),
+(377, '212715214034', 'S SARAVANA PRIYA', 'BIO', 'sarapriya98@gmail.com', 0, 0, 0, 0, 0, 0),
+(378, '212715214039', 'SRI SUPRAJA V', 'BIO', 'supraja1697@gmail.com', 1, 2, 2, 3, 1, 9),
+(379, '212715214041', 'SUBASREE S', 'BIO', 'subasreesekar1998@gmail.com', 3, 1, 3, 1, 0, 8),
+(380, '212715214045', 'A.VARDHINI', 'BIO', 'vardhinia4@gmail.com', 2, 3, 3, 3, 3, 14),
+(381, '212715214026', 'NIVETHITHA SRINIVAAS', 'BIO', 'neethusrinivaas@gmail.com', 1, 1, 1, 0, 1, 4),
+(382, '212715214032', 'SAI HARSHINI. V', 'BIO', 'saiharshinivalluri@gmail.com', 4, 3, 4, 4, 2, 17),
+(383, '212715214040', 'R SRUTHI ', 'BIO', 'sr.ramesh97@gmail.com', 3, 4, 2, 4, 1, 14),
+(384, '212715214027', 'NIVIYAH.S', 'BIO', 'niviyah.krishnan@gmail.com', 3, 1, 1, 4, 1, 10),
+(385, '212715214025', 'B.NEETHU', 'BIO', 'neethuja23@gmail.com', 3, 1, 4, 2, 1, 11),
+(386, '212715214034', 'S SARAVANA PRIYA', 'BIO', 'sarapriya98@gmail.com', 2, 2, 4, 4, 1, 13),
+(387, '212715105007', 'AMINA ULFATH SALIMA P J', 'EEE', 'aminaulfathj@gmail.com', 1, 4, 5, 2, 1, 13),
+(388, '212715105006', 'AJAY KUMAR R', 'EEE', 'ramukyajar@gmail.com', 2, 2, 3, 4, 2, 13),
+(389, '212715105003', 'ABISHEK ROY D', 'EEE', 'royabishek1997@gmail.com', 2, 1, 3, 0, 1, 7),
+(390, '212715105008', 'APOORVA K', 'EEE', 'apoorvaviji@gmail.com', 1, 2, 3, 4, 2, 12),
+(391, '212715105002', 'ABINESH.M.A', 'EEE', 'asaiabi2642000@gmail.com', 1, 3, 2, 0, 1, 7),
+(392, '212715105011', 'ARAVINDA S ', 'EEE', 'aravindasridharan97@gmail.com', 3, 0, 2, 0, 2, 7),
+(393, '212715105009', 'ARAVIND G', 'EEE', 'aravindgnanasekar@gmail.com', 4, 3, 5, 2, 1, 15),
+(394, '212715105024', 'BHARATHRAGHAVAN T', 'EEE', 'bharath.tbr@gmail.com', 5, 4, 5, 4, 5, 23),
+(395, '212715105010', 'ARAVIND S', 'EEE', 'aravindseee.1997@gmail.com', 3, 3, 3, 4, 3, 16),
+(396, '212715105001', 'ABINAYA.S', 'EEE', 'abinayasethumadhavan@gmail.com', 2, 4, 4, 2, 2, 14),
+(397, '212715105004', 'AFZAL AHAMED.C', 'EEE', 'afzal.css.97@gmail.com', 1, 4, 2, 2, 2, 11),
+(398, '212715105026', 'DEEPAK BK', 'EEE', 'bkdeepak98@gmail.com', 3, 4, 4, 2, 2, 15),
+(399, '212715105029', 'GANAPATHY', 'EEE', 'santhoshgana55@gmail.com', 1, 2, 2, 2, 1, 8),
+(400, '212715105032', 'T GOWRIESHWARAN', 'EEE', 'gowrieshking@gmail.com', 1, 2, 2, 4, 0, 9),
+(401, '212715105017', 'ARUN KUMAR N', 'EEE', 'arunkumarece15@gmail.com', 2, 5, 4, 3, 2, 16),
+(402, '212715105022', 'BALAJI S', 'EEE', 'imbj1998@gmail.com', 1, 4, 2, 1, 2, 10),
+(403, '212715105025', 'CHANDRU T', 'EEE', 'tchandru97@gmail.com', 3, 0, 1, 2, 2, 8),
+(404, '212715105031', 'GIRIDHAR.S', 'EEE', 'giridharsriraman@gmail.com', 1, 2, 2, 3, 1, 9),
+(405, '212715105015', 'ARCHANA.N', 'EEE', 'narchana348@gmail.com', 2, 4, 3, 3, 0, 12),
+(406, '212715105018', 'P.ARUNTHATHI', 'EEE', 'arutigu07@gmail.com', 3, 2, 3, 3, 3, 14),
+(407, '212715105028', 'DINESH VELAN M', 'EEE', 'dineshvelan707@gmail.com', 1, 2, 3, 2, 1, 9),
+(408, '212715105033', 'V.HAKSHAYA', 'EEE', 'hakshayadan7@gmail.com', 1, 1, 1, 3, 0, 6),
+(409, '212715105027', 'B.DEEPIKA', 'EEE', 'bdeepika.tweety@gmail.com', 2, 1, 3, 2, 2, 10),
+(410, '212715105005', 'AISHWARYA RAJAN', 'EEE', 'aishwarya.rajan7@gmail.com', 4, 4, 3, 2, 0, 13),
+(411, '212715105019', 'S.ASHUTOSH', 'EEE', 'sritha1968@gmail.com', 3, 5, 3, 2, 2, 15),
+(412, '212715105030', 'GANESH KUMAR A S', 'EEE', 'asganesh98@gmail.com', 0, 0, 2, 2, 2, 6),
+(413, '212715105052', 'MEGHANA N', 'EEE', 'meghana28698@gmail.com', 4, 5, 1, 2, 2, 14),
+(414, '212715105309', 'K.HARISHWARAN', 'EEE', 'harishwaran235@gmail.com', 2, 2, 4, 3, 0, 11),
+(415, '212715105046', 'LAKSHMI SRINIDHI P', 'EEE', 'lakshmisrinidhi97@gmail.com', 2, 4, 5, 3, 1, 15),
+(416, '212715105051', 'MEENAL SARAVANAN', 'EEE', 'smeenal1997@gmail.com', 2, 0, 2, 3, 0, 7),
+(417, '212715105039', 'JANANI N', 'EEE', 'janani.n97@gmail.com', 1, 5, 3, 1, 4, 14),
+(418, '212715105049', 'B.MALATHI', 'EEE', 'malathi11398@gmail.com', 2, 4, 3, 4, 1, 14),
+(419, '202715105314', 'MATHAN G', 'EEE', 'mathangm007@gmail.com', 1, 3, 1, 4, 0, 9),
+(420, '212715105034', 'HARISH ASHWIN V', 'EEE', 'harish.ashwin97@gmail.com', 4, 3, 5, 4, 3, 19),
+(421, '212715105042', 'V KARAN', 'EEE', 'karanjun97@gmail.com', 1, 4, 3, 2, 2, 12),
+(422, '212715105041', 'B.JEYADHEEPIKA', 'EEE', 'jeyadheepikas@gmail.com', 0, 1, 2, 2, 1, 6),
+(423, '212715105037', 'D.HARITHA SHRI', 'EEE', 'harithashri2398@gmail.com', 3, 0, 2, 1, 1, 7),
+(424, '212715105310', 'JOTHIRAJ.R', 'EEE', 'jothimadhan55@gmail.com', 3, 3, 3, 3, 3, 15),
+(425, '212715105307', 'HARISH.R', 'EEE', 'harishravi8118@gmail.com', 1, 1, 1, 2, 1, 6),
+(426, '212715105040', 'JAYARAMAN S', 'EEE', 'jairaman1997@gmail.com', 3, 2, 1, 2, 2, 10),
+(427, '212715105068', 'PRAVEEN KUMAR R', 'EEE', 'pravinkumar14021998@gmail.com', 0, 0, 0, 0, 0, 0),
+(428, '212715105313', 'MANOJAN KUMAR M', 'EEE', 'manojankumar2208@gmail.com', 1, 2, 3, 2, 1, 9),
+(429, '212715105302', 'D.ARUNESHWAR', 'EEE', 'aruneshhwar@gmail.com', 2, 2, 3, 2, 2, 11),
+(430, '212715105047', 'S.LOGESH KUMAR', 'EEE', 'slogesh97.slk@gmail.com', 1, 3, 5, 3, 3, 15),
+(431, '212715105301', 'ARUNAN A', 'EEE', 'aarun210198@gmail.com', 1, 1, 1, 2, 1, 6),
+(432, '212715105038', 'HARIVIGNESH', 'EEE', 'harivigneshsriram@gmail.com', 3, 5, 1, 3, 0, 12),
+(433, '212715105048', 'MADHAN MONISH', 'EEE', 'madhanmonishj@gmail.com', 3, 3, 3, 3, 3, 15),
+(436, '212715105099', 'VIGNESH.K', 'EEE', 'kumarvigneshkumar10@gmail.com', 2, 1, 2, 1, 2, 8),
+(437, '212715105079', 'SABARIVASAN.R', 'EEE', 'sabshock@gmail.com', 5, 3, 3, 2, 3, 16),
+(438, '212715105061', 'NARMATHA.J', 'EEE', 'chennainarma@gmail.com', 4, 3, 5, 4, 3, 19),
+(439, '212715105063', 'S. NEVATHITHAA', 'EEE', 'snivikumar@gmail.com', 3, 0, 5, 2, 0, 10),
+(440, '212715105087', 'M.SRIDHAR', 'EEE', 'sridharnov14@gmail.com', 2, 2, 3, 2, 1, 10),
+(441, '212715105085', 'SANTHOSH KUMAR', 'EEE', 'ariyansanthosh@gmail.com', 3, 0, 2, 0, 2, 7),
+(442, '212715105388', 'SRINIVASAN', 'EEE', 'cnubentley1000@gmail.com', 4, 1, 2, 4, 1, 12),
+(443, '212715105320', 'SASIKUMAR.P', 'EEE', 'sasikumar199393@gmail.com', 0, 0, 0, 0, 0, 0),
+(444, '212715105098', 'VIDHYAASHRI B', 'EEE', 'vidhyaashribashyam@gmail.com', 3, 1, 0, 1, 2, 7),
+(445, '212715105101', 'VISHNUPRIYA.J', 'EEE', 'vichusubramanian@gmail.com', 4, 1, 3, 2, 1, 11),
+(446, '212715105320', 'P.SASIKUMAR', 'EEE', 'sasikumar199393@gmail.com', 0, 0, 0, 0, 0, 0),
+(447, '212715105320', 'P.SASIKUMAR', 'EEE', 'sasikumar199393@gmail.com', 1, 0, 1, 0, 1, 3),
+(448, '212715105095', 'R.VALLIAPPAN', 'EEE', 'valliappanvinoth650@gmail.com', 2, 2, 1, 3, 0, 8),
+(449, '212715105091', 'SURYA N', 'EEE', 'suryanagarajan18@gmail.com', 2, 3, 3, 1, 2, 11),
+(450, '212715105074', 'R RAJARAM', 'EEE', 'rrajaram14@gmail.com', 5, 1, 5, 2, 2, 15),
+(451, '212715105102', 'VISHVANAND.N', 'EEE', 'nvishva08@gmail.com', 2, 3, 3, 2, 2, 12),
+(452, '212715105094', 'TOSHIBA A P', 'EEE', 'toshirosy@gmail.com', 1, 3, 3, 2, 1, 10),
+(453, '212715105321', 'SUBASH', 'EEE', 'subashraj1053@gmail.com', 2, 1, 2, 2, 2, 9);
 
 -- --------------------------------------------------------
 
