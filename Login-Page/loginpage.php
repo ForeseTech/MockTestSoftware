@@ -22,6 +22,7 @@
 	$_SESSION['terminalNum']=$terminal;
 	$_SESSION['username']=$name;
 	$_SESSION['email']=$email;
+	$_SESSION['regNum']=$reg;
 	
 	try{
 	    $conn=setConn();

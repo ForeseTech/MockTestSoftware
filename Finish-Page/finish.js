@@ -1,5 +1,5 @@
-window.setTimeout(redirect, 30000);
+window.setTimeout(redirect, 20000);
 
 function redirect(){
-	window.location.href="../Login-Page/loginpage.html";
+	window.location.href="../Feedback-Page/feedback-page.html";
 }
