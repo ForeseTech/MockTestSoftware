@@ -54,7 +54,7 @@
 		</div>
 	</div>
 	
-	<p id="score"><?php echo $_SESSION['username']; ?>, your score is <b><?php echo $total;?></b>.<br> Reports containing your scores and further analysis will be sent to '<?php echo $_SESSION['email']; ?>'.<br>This page will be redirected in 20 seconds.</p>
+	<p id="score"><?php echo $_SESSION['username']; ?>, your score is <b><?php echo $total;?></b>.<br> Reports containing your scores and further analysis will be sent to '<?php echo $_SESSION['email']; ?>'.<br>This page will be redirected in 15 seconds.</p>
 </body>
 <?php
 	try{
