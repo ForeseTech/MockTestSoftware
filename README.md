@@ -12,6 +12,9 @@ Documentation shall be provided soon.
 * TextMate
 * XAMPP
 
+## Dependencies
+* dompdf (Report Generation)
+
 ## Contributors
 * Development and Design - Arjun Aravind
 * Input - Aravind Balakrishnan, Jashaul D, Pranav Wadhwa, Jeyenth, Kaushik G
