@@ -15,4 +15,4 @@ Documentation shall be provided soon.
 ## Contributors
 * Development and Design - Arjun Aravind
 * Input & Feedback - v1.0 - Aravind Balakrishnan, Jashaul D, Pranav Wadhwa, Jeyenth, Kaushik G
-* Input & Feedback - v2.0 - Pojaa R, Nilesh Lund
+* Input & Feedback - v2.0 - Pojaa R, Nilesh D
