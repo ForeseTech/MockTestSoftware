@@ -9,4 +9,16 @@ function redirect($pageToRedirect) {
 	die();
 }
 
+function redirectToLogin() {
+	redirect("../Login-Page/loginpage.html");
+}
+
+function isNotLoggedIn() {
+	if(!isset($_SESSION["terminalNum"])) {
+		return true;
+	}
+	
+	return false;
+}
+
 ?>
