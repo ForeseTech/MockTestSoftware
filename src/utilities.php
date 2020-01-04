@@ -10,7 +10,7 @@ function redirect($pageToRedirect) {
 }
 
 function redirectToLogin() {
-	redirect("../Login-Page/loginpage.html");
+	redirect("../login/index.html");
 }
 
 function isNotLoggedIn() {

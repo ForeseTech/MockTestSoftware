@@ -33,7 +33,7 @@
 
 		foreach($results as $row){
 			if($row['NUM']==0){
-				redirect("loginpage.html");
+				redirectToLogin();
 			}
 			if($row['NUM']==1){
 				
@@ -48,7 +48,7 @@
 				$sql->bindParam(5, $_SESSION['terminalNum']);
 				$sql->execute();
 
-				redirect("../Rules-Page/rules-page.html");
+				redirect("../rules/index.html");
 			}
 		}
 		
