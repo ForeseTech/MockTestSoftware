@@ -33,9 +33,8 @@ function changeTimer(){
 	
 	if(timerSecond==0){
 		if(timerMinute==0 && timerSecond==0){
-			echoSetNum();
 			alert("Thanks for taking the test! Click 'OK' to see your scores!");
-			finishAndCalc(setNum);
+			finishAndCalc();
 		}
 		if(timerMinute==1){
 			document.getElementById("timer").style.color="red";
@@ -45,8 +44,7 @@ function changeTimer(){
 	}
 	
 	if(timerMinute<0){
-		echoSetNum();
-		finishAndCalc(setNum);
+		finishAndCalc();
 	}
 }
 
@@ -55,7 +53,7 @@ function changeTimer(){
 /* ANSWER SUBMISSIONS */
 /*====================*/
 
-function finishAndCalc(num){
+function finishAndCalc(){
 	var i=0;
 	
 	var sec1=0;
@@ -64,91 +62,57 @@ function finishAndCalc(num){
 	var sec4=0;
 	var sec5=0;
 	
-	while(i<25){
-		
-		if(num==1){
-			var correct=correctAns1[i];
-			var user=userAns[i];
-		
-			if(i<5 && user==correct){
-				sec1+=1;
-			}
-			else if(i<10 && user==correct){
-				sec2+=1;
-			}
-			else if(i<15 && user==correct){
-				sec3+=1;
-			}
-			else if(i<20 && user==correct){
-				sec4+=1;
-			}
-			else if(i<25 && user==correct){
-				sec5+=1;
-			}
+	while(i<25){	
+		var correct=correctAns1[i];
+		var user=userAns[i];
+	
+		if(i<10 && user==correct){
+			sec1+=1;
 		}
-		else if(num==2){
-			var correct=correctAns2[i];
-			var user=userAns[i];
-		
-			if(i<5 && user==correct){
-				sec1+=1;
-			}
-			else if(i<10 && user==correct){
-				sec2+=1;
-			}
-			else if(i<15 && user==correct){
-				sec3+=1;
-			}
-			else if(i<20 && user==correct){
-				sec4+=1;
-			}
-			else if(i<25 && user==correct){
-				sec5+=1;
-			}
+		else if(i<20 && user==correct){
+			sec2+=1;
 		}
-		else if(num==3){
-			var correct=correctAns3[i];
-			var user=userAns[i];
-		
-			if(i<5 && user==correct){
-				sec1+=1;
-			}
-			else if(i<10 && user==correct){
-				sec2+=1;
-			}
-			else if(i<15 && user==correct){
-				sec3+=1;
-			}
-			else if(i<20 && user==correct){
-				sec4+=1;
-			}
-			else if(i<25 && user==correct){
-				sec5+=1;
-			}
+		else if(i<30 && user==correct){
+			sec3+=1;
 		}
+		else if(i<40 && user==correct){
+			sec4+=1;
+		}
+		else if(i<50 && user==correct){
+			sec5+=1;
+		}
+		
 		i+=1;
 	}
 	window.location.href="../finish/index.php?s1="+sec1+"&s2="+sec2+"&s3="+sec3+"&s4="+sec4+"&s5="+sec5;
 }
 
-function echoSetNum(){
+function getAnswersArray(){
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            setNum = this.responseText;
+            var answersString = this.responseText;
+
+	    // We shall now parse the string into an array.
+	    alert(answersString);
+	    for(var iter=0; iter<100; iter+=1) {
+	    	if(answersString[iter] == ' ');
+		else if(answersString[iter] == '1') correctAns1[iter].push(1);
+		else if(answersString[iter] == '2') correctAns1[iter].push(2);
+		else if(answersString[iter] == '3') correctAns1[iter].push(3);
+		else if(answersString[iter] == '4') correctAns1[iter].push(4);
+	    }
         }
     };
-    xmlhttp.open("GET", "echoSetNum.php", true);
+    xmlhttp.open("GET", "getAnswers.php", true);
     xmlhttp.send();
 }
 
-/* Arrays for the correct answers and user answers. Their functions too. */
-var setNum=0;
-var userAns=new Array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
 
-var correctAns1=new Array(4,1,1,2,2,3,1,3,3,1,4,2,1,1,1,1,4,3,2,4,4,2,2,1,2);
-var correctAns2=new Array(4,1,1,2,3,3,1,2,1,2,4,2,1,1,1,2,2,1,3,1,4,2,2,1,2);
-var correctAns3=new Array(1,2,1,1,2,3,1,3,3,1,2,4,2,3,2,1,4,3,2,4,1,4,2,3,4);
+
+/* Arrays for the correct answers and user answers. Their functions too. */
+var userAns=new Array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+var correctAns1=new Array();
 
 function check(qno){
 	if(document.getElementById("ans_one").checked==true){
