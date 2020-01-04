@@ -24,6 +24,7 @@
 	$_SESSION['username']=$name;
 	$_SESSION['email']=$email;
 	$_SESSION['regNum']=$reg;
+	$_SESSION['dept']=$dept;
 	
 	try{
 	    	$conn=getConnection();

@@ -21,6 +21,24 @@
 	$per5=($sec5/5)*100;
 	
 	$total=($sec1+$sec2+$sec3+$sec4+$sec5);
+
+	try{
+	    	$conn=getConnection();
+		$sql_stmt="UPDATE LOGIN SET SEC_1=?, SEC_2=?, SEC_3=?, SEC_4=?, SEC_5=?, TOTAL_SCORE=? WHERE TERMINAL_NO=?";
+	
+		$sql=$conn->prepare($sql_stmt);
+		$sql->bindParam(1, $sec1);
+		$sql->bindParam(2, $sec2);
+		$sql->bindParam(3, $sec3);
+		$sql->bindParam(4, $sec4);
+		$sql->bindParam(5, $sec5);
+		$sql->bindParam(6, $total);
+		$sql->bindParam(7, $_SESSION['terminalNum']);
+		$sql->execute();
+
+	} catch (PDOExcpetion $e){
+		echo $e."<br>";
+	}
 ?>
 <head>
 	<title>Mock Test | Finish Page</title>
@@ -52,23 +70,4 @@
 	
 	<p id="score"><?php echo $_SESSION['username']; ?>, your score is <b><?php echo $total;?></b>.<br> Reports containing your scores and further analysis will be sent to '<?php echo $_SESSION['email']; ?>'.<br>This page will be redirected in 15 seconds.</p>
 </body>
-<?php
-	try{
-	    	$conn=getConnection();
-		$sql_stmt="UPDATE LOGIN SET SEC_1=?, SEC_2=?, SEC_3=?, SEC_4=?, SEC_5=?, TOTAL_SCORE=? WHERE TERMINAL_NO=?";
-	
-		$sql=$conn->prepare($sql_stmt);
-		$sql->bindParam(1, $sec1);
-		$sql->bindParam(2, $sec2);
-		$sql->bindParam(3, $sec3);
-		$sql->bindParam(4, $sec4);
-		$sql->bindParam(5, $sec5);
-		$sql->bindParam(6, $total);
-		$sql->bindParam(7, $_SESSION['terminalNum']);
-		$sql->execute();
-
-	} catch (PDOExcpetion $e){
-		echo $e."<br>";
-	}
-?>
 </html>

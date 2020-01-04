@@ -38,7 +38,7 @@
 	    
 		if($q!=51){
 			$conn = getConnection();	
-			$sql_stmt = "SELECT* FROM SET".$_SESSION['setNum']." WHERE QUESTION_NO=$q";
+			$sql_stmt = "SELECT* FROM ".$_SESSION["dept"].$_SESSION["setNum"]." WHERE QUESTION_NO=$q";
 	
 			$results = executeQuery($conn, $sql_stmt);
 
