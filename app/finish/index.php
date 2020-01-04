@@ -14,11 +14,11 @@
 	$sec4=$_REQUEST['s4'];
 	$sec5=$_REQUEST['s5'];
 
-	$per1=($sec1/5)*100;
-	$per2=($sec2/5)*100;
-	$per3=($sec3/5)*100;
-	$per4=($sec4/5)*100;
-	$per5=($sec5/5)*100;
+	$per1=($sec1/10)*100;
+	$per2=($sec2/10)*100;
+	$per3=($sec3/10)*100;
+	$per4=($sec4/10)*100;
+	$per5=($sec5/10)*100;
 	
 	$total=($sec1+$sec2+$sec3+$sec4+$sec5);
 
@@ -71,3 +71,10 @@
 	<p id="score"><?php echo $_SESSION['username']; ?>, your score is <b><?php echo $total;?></b>.<br> Reports containing your scores and further analysis will be sent to '<?php echo $_SESSION['email']; ?>'.<br>This page will be redirected in 15 seconds.</p>
 </body>
 </html>
+<?php
+
+/* We now destroy the session. */
+session_unset();
+session_destroy();
+
+?>
