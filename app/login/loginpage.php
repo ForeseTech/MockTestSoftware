@@ -12,12 +12,12 @@
 	require '../../src/utilities.php';
 
 	/* We get the necessary details using POST. */
-	$terminal=$_POST['terminalInput'];
-	$password=$_POST['passwordInput'];
-	$name=$_POST['nameInput'];
-	$reg=$_POST['regInput'];
-	$dept=$_POST['deptInput'];
-	$email=$_POST['emailInput'];
+	$terminal=strip_tags($_POST['terminalInput']);
+	$password=strip_tags($_POST['passwordInput']);
+	$name=strip_tags($_POST['nameInput']);
+	$reg=strip_tags($_POST['regInput']);
+	$dept=strip_tags($_POST['deptInput']);
+	$email=strip_tags($_POST['emailInput']);
 
 	/* We set some session variables. */
 	$_SESSION['terminalNum']=$terminal;
