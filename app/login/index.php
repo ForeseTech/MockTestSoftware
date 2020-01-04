@@ -69,16 +69,15 @@ if($msg==1) {
 		<input type="text" class="formInput" name="nameInput" placeholder="Your Name" required>
 		<input type="text" class="formInput" name="regInput" placeholder="Your Registration No." required>
 		<select name="deptInput" class="formInput" id="deptSelect">
-			<option value="CS">CSE</option>
+			<option value="CSE">CSE</option>
 			<option value="IT">IT</option>
 			<option value="EEE">EEE</option>
 			<option value="ECE">ECE</option>
-			<option value="CHEM">CHEM</option>
+			<option value="CHE">CHEM</option>
 			<option value="BIO">BIO</option>
-			<option value="CIVIL">CIVIL</option>
-			<option value="MECH">MECH</option>
-			<option value="AUTO">AUTO</option>
-			<option value="PG">PG DEPARTMENT</option>
+			<option value="CIV">CIVIL</option>
+			<option value="MEC">MECH</option>
+			<option value="AUT">AUTO</option>
 		</select>
 		<input type="email" class="formInput" name="emailInput" placeholder="Your E-Mail ID" required>
 		<button type="submit" class="formInput" id="submitButt">LOGIN</button>

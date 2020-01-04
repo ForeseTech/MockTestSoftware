@@ -22,16 +22,16 @@ try {
 		$ans = $row['CORRECTOPT'];
 	
 		if($ans == "A") {
-			echo "1 ";
+			echo "1";
 		}
 		else if($ans == "B") {
-			echo "2 ";
+			echo "2";
 		}
 		else if($ans == "C") {
-			echo "3 ";
+			echo "3";
 		}
 		else {
-			echo "4 ";
+			echo "4";
 		}
 	}
 
