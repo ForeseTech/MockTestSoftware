@@ -1,4 +1,11 @@
-/* Timer JavaScript */
+/**********************/
+/* QUESTION-OUTPUT.JS */
+/**********************/
+
+/*=======*/
+/* TIMER */
+/*=======*/
+
 var timerMinute=31;
 var timerSecond=60;
 
@@ -43,7 +50,11 @@ function changeTimer(){
 	}
 }
 
-/* JS for all the buttons and everything else */
+
+/*====================*/
+/* ANSWER SUBMISSIONS */
+/*====================*/
+
 function finishAndCalc(num){
 	var i=0;
 	
@@ -117,7 +128,7 @@ function finishAndCalc(num){
 		}
 		i+=1;
 	}
-	window.location.href="../Finish-Page/finish.php?s1="+sec1+"&s2="+sec2+"&s3="+sec3+"&s4="+sec4+"&s5="+sec5;
+	window.location.href="../finish/index.php?s1="+sec1+"&s2="+sec2+"&s3="+sec3+"&s4="+sec4+"&s5="+sec5;
 }
 
 function echoSetNum(){

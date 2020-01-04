@@ -1,26 +1,30 @@
 <?php
-	session_start();
 
-	if(!array_key_exists('terminalNum',$_SESSION) && empty($_SESSION['terminalNum'])) {
-		echo "<script>window.location.href='../Login-Signup/loginpage.html';</script>";
+	/**********************/
+	/* QUESTIONOUTPUT.PHP */
+	/**********************/
+
+	/* This file outputs the HTML code for the question required along with the HTML for the options (radio buttons). */
+	/* Is used for an AJAX function. */
+
+	/* We start the session and include the necessary libraries. */
+	session_start();
+	require("../../src/sql-connections.php");
+	require("../../src/sql-functions.php");
+	require("../../src/utilities.php");
+
+	/* We check if the user is logged in. */
+	if(isNotLoggedIn()) {
+		redirectToLogin();
 	}
-	
-	function setConn(){
-		$servername="localhost";
-		$user="root";
-		$pass="";
-		$dbname="MOCKS";
-	
-	    $CONN=new PDO("mysql:host=$servername;dbname=$dbname",$user,$pass);
-	    $CONN->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-		return $CONN;
-	}
-	
+
+	/* We check to see which questions is required and if it has been answered already. */
 	$q=$_REQUEST['qno'];
 	$checkedNum=$_REQUEST['checked'];
 	$prevNum=0;
 	$nextNum=0;
-	
+
+	/* We also initialise the next and prev buttons on the question page. */
 	if($q==1){
 		$prevNum=1;
 		$nextNum=2;
@@ -33,13 +37,11 @@
 	try{
 	    
 		if($q!=26){
-		    $conn=setConn();
+			$conn = getConnection();	
+			$sql_stmt = "SELECT* FROM SET".$_SESSION['setNum']." WHERE QUESTION_NO=$q";
 	
-			$sql_stmt="SELECT* FROM SET".$_SESSION['setNum']." WHERE QUESTION_NO=$q";
-	
-		  	$stmt = $conn->query($sql_stmt);
-		 	$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
-		
+			$results = executeQuery($conn, $sql_stmt);
+
 			$question="";
 			$OPTA="";
 			$OPTB="";

@@ -1,23 +1,20 @@
 <?php
+
+/********************/
+/* FEEDBACK-PHP.PHP */
+/********************/
+
+/* We start the session and include necessary libraries. */
 session_start();
-
-function setConn(){
-	$servername="localhost";
-	$user="root";
-	$pass="";
-	$dbname="MOCKS";
-
-    $CONN=new PDO("mysql:host=$servername;dbname=$dbname",$user,$pass);
-    $CONN->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-	return $CONN;
-}
+require("../../src/sql_connections.php");
+require("../../src/utilities.php")
 
 $comments=$_POST['commentsInput'];
 $ratings=$_POST['ratingsInput'];
 
 
 try{
-    $conn=setConn();
+	$conn=getConnection();
 	$sql_stmt="INSERT INTO COMMENTS VALUES (COMMENT_NO, ?, ?, ?);";
 
 	$sql=$conn->prepare($sql_stmt);
@@ -33,5 +30,5 @@ try{
 session_unset();
 session_destroy();
 
-echo "<script>window.location.href='../Login-Page/loginpage.html';</script>";
+redirectToLogin();
 ?>

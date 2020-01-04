@@ -1,11 +1,14 @@
 <?php
-	session_start();
-	loginRedirect();
+	
+	/*************************/
+	/* INDEX.PHP (QUESTIONS) */
+	/*************************/
 
-	function loginRedirect(){
-		if(!array_key_exists('terminalNum',$_SESSION) && empty($_SESSION['terminalNum'])) {
-			echo "<script>window.location.href='../Login-Page/loginpage.html';</script>";
-		}
+	session_start();
+	require('../../src/utilities.php');
+
+	if(isNotLoggedIn()) {
+		redirectToLogin();
 	}
 ?>
 <DOCTYPE! html>
@@ -17,7 +20,7 @@
 		d. Will follow Kaushik's suggestion and keep all the answers here in an array. We shall also store all the answers submitted by the user in an array and then compare both the arrays in the end when they press 'Finish'. (This is better than the original idea where we compare the answer submitted to the correct answer during the submission of every question. Discuss with others.)
 -->
 <head>
-	<title>Question Page</title>
+	<title>Mock Test | Questions</title>
 	<link href="question-page.css" rel="stylesheet">
 	<script src="question-page.js"></script>
 </head>

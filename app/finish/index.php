@@ -1,17 +1,13 @@
 <?php
-	session_start();
-	
-	function setConn(){
-		$servername="localhost";
-		$user="root";
-		$pass="";
-		$dbname="MOCKS";
-	
-	    $CONN=new PDO("mysql:host=$servername;dbname=$dbname",$user,$pass);
-	    $CONN->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-		return $CONN;
-	}
+	/**********************/
+	/* INDEX.PHP (FINISH) */
+	/**********************/
 
+	/* We start the session and include the neccssary libraries. */
+	session_start();
+	require("../../src/utlities.php");
+	require("../../src/sql-connections.php");
+	
 	$sec1=$_REQUEST['s1'];
 	$sec2=$_REQUEST['s2'];
 	$sec3=$_REQUEST['s3'];
@@ -27,7 +23,7 @@
 	$total=($sec1+$sec2+$sec3+$sec4+$sec5);
 ?>
 <head>
-	<title>Finish</title>
+	<title>Mock Test | Finish Page</title>
 	<link href="finish.css" rel="stylesheet">
 	<script src="finish.js"></script>
 </head>
@@ -58,7 +54,7 @@
 </body>
 <?php
 	try{
-	    $conn=setConn();
+	    	$conn=getConnection();
 		$sql_stmt="UPDATE LOGIN SET SEC_1=?, SEC_2=?, SEC_3=?, SEC_4=?, SEC_5=?, TOTAL_SCORE=? WHERE TERMINAL_NO=?";
 	
 		$sql=$conn->prepare($sql_stmt);
