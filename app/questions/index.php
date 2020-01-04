@@ -60,6 +60,31 @@
 			<div class='questionOverview' id='indiQuestion23' onclick='showInfo(23)'><p class='questionOverviewNum'>23</p></div>
 			<div class='questionOverview' id='indiQuestion24' onclick='showInfo(24)'><p class='questionOverviewNum'>24</p></div>
 			<div class='questionOverview' id='indiQuestion25' onclick='showInfo(25)'><p class='questionOverviewNum'>25</p></div>
+			<div class='questionOverview' id='indiQuestion20' onclick='showInfo(26)'><p class='questionOverviewNum'>20</p></div>
+			<div class='questionOverview' id='indiQuestion21' onclick='showInfo(27)'><p class='questionOverviewNum'>21</p></div>
+			<div class='questionOverview' id='indiQuestion22' onclick='showInfo(28)'><p class='questionOverviewNum'>22</p></div>
+			<div class='questionOverview' id='indiQuestion23' onclick='showInfo(29)'><p class='questionOverviewNum'>23</p></div>
+			<div class='questionOverview' id='indiQuestion24' onclick='showInfo(30)'><p class='questionOverviewNum'>24</p></div>
+			<div class='questionOverview' id='indiQuestion10' onclick='showInfo(31)'><p class='questionOverviewNum'>10</p></div>
+			<div class='questionOverview' id='indiQuestion11' onclick='showInfo(32)'><p class='questionOverviewNum'>11</p></div>
+			<div class='questionOverview' id='indiQuestion12' onclick='showInfo(33)'><p class='questionOverviewNum'>12</p></div>
+			<div class='questionOverview' id='indiQuestion13' onclick='showInfo(34)'><p class='questionOverviewNum'>13</p></div>
+			<div class='questionOverview' id='indiQuestion14' onclick='showInfo(35)'><p class='questionOverviewNum'>14</p></div>
+			<div class='questionOverview' id='indiQuestion15' onclick='showInfo(36)'><p class='questionOverviewNum'>15</p></div>
+			<div class='questionOverview' id='indiQuestion16' onclick='showInfo(37)'><p class='questionOverviewNum'>16</p></div>
+			<div class='questionOverview' id='indiQuestion17' onclick='showInfo(38)'><p class='questionOverviewNum'>17</p></div>
+			<div class='questionOverview' id='indiQuestion18' onclick='showInfo(39)'><p class='questionOverviewNum'>18</p></div>
+			<div class='questionOverview' id='indiQuestion19' onclick='showInfo(40)'><p class='questionOverviewNum'>19</p></div>
+			<div class='questionOverview' id='indiQuestion20' onclick='showInfo(41)'><p class='questionOverviewNum'>20</p></div>
+			<div class='questionOverview' id='indiQuestion21' onclick='showInfo(42)'><p class='questionOverviewNum'>21</p></div>
+			<div class='questionOverview' id='indiQuestion22' onclick='showInfo(43)'><p class='questionOverviewNum'>22</p></div>
+			<div class='questionOverview' id='indiQuestion23' onclick='showInfo(44)'><p class='questionOverviewNum'>23</p></div>
+			<div class='questionOverview' id='indiQuestion24' onclick='showInfo(45)'><p class='questionOverviewNum'>24</p></div>
+			<div class='questionOverview' id='indiQuestion25' onclick='showInfo(46)'><p class='questionOverviewNum'>25</p></div>
+			<div class='questionOverview' id='indiQuestion20' onclick='showInfo(46)'><p class='questionOverviewNum'>20</p></div>
+			<div class='questionOverview' id='indiQuestion21' onclick='showInfo(48)'><p class='questionOverviewNum'>21</p></div>
+			<div class='questionOverview' id='indiQuestion22' onclick='showInfo(49)'><p class='questionOverviewNum'>22</p></div>
+			<div class='questionOverview' id='indiQuestion23' onclick='showInfo(50)'><p class='questionOverviewNum'>23</p></div>
 			<button type='button' id='genSubmitButton' onclick='finishAndCalc(<?php echo $_SESSION['setNum']; ?>);' class='form-Buttons'>Submit Answers!</button>
 		</div>
 	</div>

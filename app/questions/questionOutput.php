@@ -36,7 +36,7 @@
 	
 	try{
 	    
-		if($q!=26){
+		if($q!=51){
 			$conn = getConnection();	
 			$sql_stmt = "SELECT* FROM SET".$_SESSION['setNum']." WHERE QUESTION_NO=$q";
 	
