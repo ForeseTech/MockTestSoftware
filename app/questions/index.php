@@ -8,7 +8,7 @@
 	require('../../src/utilities.php');
 
 	if(isNotLoggedIn()) {
-		redirectToLogin();
+		redirectToLogin(0);
 	}
 ?>
 <DOCTYPE! html>

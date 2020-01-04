@@ -33,7 +33,7 @@
 
 		foreach($results as $row){
 			if($row['NUM']==0){
-				redirectToLogin();
+				redirectToLogin(1);
 			}
 			if($row['NUM']==1){
 				

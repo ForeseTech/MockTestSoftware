@@ -1,3 +1,18 @@
+<?php
+
+/*************/
+/* INDEX.PHP */
+/*************/
+
+/* We get the message variables necessary. */
+$msg = $_REQUEST["msg"];
+
+/* We then print the message. */
+if($msg==1) {
+	echo "<script>alert('Use a different terminal ID!');</script>";
+}
+
+?>
 <!DOCTYPE html>
 <head>
 	<title>Mock Test | Login Page</title>

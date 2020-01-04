@@ -5,9 +5,9 @@
 
 	/* We start the session and include the neccssary libraries. */
 	session_start();
-	require("../../src/utlities.php");
+	require("../../src/utilities.php");
 	require("../../src/sql-connections.php");
-	
+
 	$sec1=$_REQUEST['s1'];
 	$sec2=$_REQUEST['s2'];
 	$sec3=$_REQUEST['s3'];

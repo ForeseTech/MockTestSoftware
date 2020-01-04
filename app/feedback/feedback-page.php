@@ -6,8 +6,8 @@
 
 /* We start the session and include necessary libraries. */
 session_start();
-require("../../src/sql_connections.php");
-require("../../src/utilities.php")
+require("../../src/sql-connections.php");
+require("../../src/utilities.php");
 
 $comments=$_POST['commentsInput'];
 $ratings=$_POST['ratingsInput'];
@@ -30,5 +30,5 @@ try{
 session_unset();
 session_destroy();
 
-redirectToLogin();
+redirectToLogin(0);
 ?>

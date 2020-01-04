@@ -5,12 +5,12 @@
 /*****************/
 
 function redirect($pageToRedirect) {
-	header('Location: $pageToRedirect', true, 303);
+	header("Location: $pageToRedirect", true, 303);
 	die();
 }
 
-function redirectToLogin() {
-	redirect("../login/index.html");
+function redirectToLogin($msg) {
+	redirect("../login/index.php?msg=$msg");
 }
 
 function isNotLoggedIn() {

@@ -15,7 +15,7 @@
 
 	/* We check if the user is logged in. */
 	if(isNotLoggedIn()) {
-		redirectToLogin();
+		redirectToLogin(0);
 	}
 
 	/* We check to see which questions is required and if it has been answered already. */
