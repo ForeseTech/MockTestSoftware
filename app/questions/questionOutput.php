@@ -60,7 +60,7 @@
 			
 			echo "<header id='question'>$q. $question</header>";
 			
-			if($PICTURE!="NONE"){
+			if($PICTURE!="None"){
 				echo "<img src='SET".$_SESSION['setNum']."/$PICTURE' id='questionPic'>";
 			}
 			

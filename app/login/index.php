@@ -63,14 +63,15 @@ if($msg==1) {
 		<div id="timer"></div>
 	</div>
 	<form id="loginform" method="post" action="loginpage.php">
-		<input type="text" class="formInput" name="terminalInput" placeholder="Terminal No.">
+		<input type="text" class="formInput" name="terminalInput" placeholder="Terminal No." required>
 		<input type="password" class="formInput" name="passwordInput" placeholder="Password" required><br><br>
 		
 		<input type="text" class="formInput" name="nameInput" placeholder="Your Name" required>
 		<input type="text" class="formInput" name="regInput" placeholder="Your Registration No." required>
-		<select name="deptInput" class="formInput" id="deptSelect">
+		<select name="deptInput" class="formInput" id="deptSelect" required>
+			<option value="">Choose Dept</option>
 			<option value="CSE">CSE</option>
-			<option value="IT">IT</option>
+			<option value="INF">IT</option>
 			<option value="EEE">EEE</option>
 			<option value="ECE">ECE</option>
 			<option value="CHE">CHEM</option>
