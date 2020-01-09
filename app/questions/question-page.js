@@ -6,7 +6,7 @@
 /* TIMER */
 /*=======*/
 
-var timerMinute=0;
+var timerMinute=49;
 var timerSecond=60;
 
 window.setInterval(changeTimer, 1000);

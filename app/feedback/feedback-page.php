@@ -14,11 +14,11 @@ $ratings=$_POST['ratingsInput'];
 
 try{
 	$conn=getConnection();
-	$sql_stmt="INSERT INTO COMMENTS VALUES (COMMENT_NO, ?, ?, ?);";
+	$sql_stmt="INSERT INTO COMMENTS VALUES (COMMENT_NO, ?, ?);";
 
 	$sql=$conn->prepare($sql_stmt);
-	$sql->bindParam(2, $comments);
-	$sql->bindParam(3, $ratings);
+	$sql->bindParam(1, $comments);
+	$sql->bindParam(2, $ratings);
 	$sql->execute();
 
 } catch (PDOExcpetion $e){
