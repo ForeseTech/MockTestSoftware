@@ -3,3 +3,6 @@
 
 # Secrets
 *sql-variables.php
+
+# SQL-Dump Files
+*MOCKS20-data.sql
