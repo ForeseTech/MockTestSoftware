@@ -6,7 +6,7 @@ require("../../src/csv-generation.php");
 
 generateCSV();
 
-header("Location: index.html", true, 303);
+header("Location: ./", true, 303);
 die();
 
 ?>

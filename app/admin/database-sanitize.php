@@ -6,7 +6,7 @@ require("../../src/sanitize-database.php");
 
 sanitizeScoresInDatabase();
 
-header("Location: index.html", true, 303);
+header("Location: ./", true, 303);
 die();
 
 ?>
