@@ -4,5 +4,6 @@
 # Secrets
 *sql-variables.php
 
-# SQL-Dump Files
+# SQL-Dump and CSV Files
 *MOCKS20-data.sql
+*MOCKS20-data.csv
