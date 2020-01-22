@@ -1,5 +1,9 @@
 <?php
 
+/*************************/
+/* SANITIZE-DATABASE.PHP */
+/*************************/
+
 /* This function removes all the scores which are invalid in the LOGIN table by resetting the values. */
 /* Invalid scores are scores which are generated due to errors/premature submissions in the test, etc. */
 /* The latest entry by a student is considered as the final score. */
@@ -12,7 +16,7 @@ function removeInvalidScores() {
 	try{
 	    
 		$conn = getConnection();	
-		$sql_stmt = "SELECT TERMINAL_NO, REG_NO FROM LOGIN2 WHERE LOGGED_IN = 1;";
+		$sql_stmt = "SELECT TERMINAL_NO, REG_NO FROM LOGIN WHERE LOGGED_IN = 1;";
 		$results = executeQuery($conn, $sql_stmt);
 
 		/* When new reg_no is encountered, we push in array. */
