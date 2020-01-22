@@ -267,7 +267,7 @@ CREATE TABLE `COMMENTS` (
   `COMMENT_TEXT` varchar(5000) NOT NULL,
   `COMMENT_RATINGS` int(11) NOT NULL,
   PRIMARY KEY (`COMMENT_NO`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=200 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -522,7 +522,7 @@ CREATE TABLE `LOGIN` (
   `LOGGED_IN` tinyint(4) NOT NULL DEFAULT '0',
   `REG_NO` varchar(50) NOT NULL,
   `NAME` varchar(200) NOT NULL,
-  `DEPT` enum('AUT','BIO','CSE','CHE','CIV','ECE','EEE','INF','MEC') DEFAULT 'CSE',
+  `DEPT` enum('AUT','BIO','CSE','CHE','CIV','ECE','EEE','INF','MEC') NOT NULL DEFAULT 'CSE',
   `EMAIL` varchar(200) NOT NULL,
   `SET_NO` tinyint(4) NOT NULL,
   `SEC_1` tinyint(4) NOT NULL DEFAULT '0',
@@ -603,19 +603,19 @@ DROP TABLE IF EXISTS `SCORES`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `SCORES` (
-  `STUD_NO` int(10) NOT NULL AUTO_INCREMENT,
-  `REG_NO` varchar(100) NOT NULL,
-  `NAME` varchar(100) NOT NULL,
-  `DEPT` varchar(100) NOT NULL,
-  `EMAIL` varchar(100) NOT NULL,
-  `SEC1` int(11) NOT NULL,
-  `SEC2` int(11) NOT NULL,
-  `SEC3` int(11) NOT NULL,
-  `SEC4` int(11) NOT NULL,
-  `SEC5` int(11) NOT NULL,
-  `TOTAL` int(11) DEFAULT NULL,
-  PRIMARY KEY (`STUD_NO`)
-) ENGINE=MyISAM AUTO_INCREMENT=12346 DEFAULT CHARSET=latin1;
+  `REG_NO` varchar(50) NOT NULL,
+  `NAME` varchar(200) NOT NULL,
+  `DEPT` enum('AUT','BIO','CSE','CHE','CIV','ECE','EEE','INF','MEC') DEFAULT NULL,
+  `EMAIL` varchar(200) DEFAULT NULL,
+  `SET_NO` tinyint(4) NOT NULL,
+  `SEC_1` tinyint(4) NOT NULL,
+  `SEC_2` tinyint(4) NOT NULL,
+  `SEC_3` tinyint(4) NOT NULL,
+  `SEC_4` tinyint(4) NOT NULL,
+  `SEC_5` tinyint(4) NOT NULL,
+  `TOTAL_SCORE` tinyint(4) NOT NULL,
+  PRIMARY KEY (`REG_NO`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -627,4 +627,4 @@ CREATE TABLE `SCORES` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-01-09 20:20:35
+-- Dump completed on 2020-01-22 17:57:18

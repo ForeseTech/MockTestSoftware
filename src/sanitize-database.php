@@ -1,8 +1,5 @@
 <?php
 
-require("sql-connections.php");
-require("sql-functions.php");
-
 /* This function removes all the scores which are invalid in the LOGIN table by resetting the values. */
 /* Invalid scores are scores which are generated due to errors/premature submissions in the test, etc. */
 /* The latest entry by a student is considered as the final score. */
@@ -75,7 +72,7 @@ function resetLoginTable() {
 
 function sanitizeScoresInDatabase() {
 	removeInvalidScores();
-	pushIntoScoresTable();
+	pushToScoresTable();
 	resetLoginTable();
 }
 
