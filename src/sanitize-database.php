@@ -40,7 +40,10 @@ function removeInvalidScores() {
 
 	} catch (PDOExcpetion $e){
 		echo $e."<br>";
+		return false;
 	}
+	
+	return true;
 
 }
 
@@ -56,7 +59,10 @@ function pushToScoresTable() {
 
 	} catch (PDOException $e) {
 		echo $e."<br>";
+		return false;
 	}
+
+	return true;
 }
 
 /* We reset all the records in the LOGIN table. */
@@ -72,12 +78,15 @@ function resetLoginTable() {
 	} catch (PDOException $e) {
 		echo $e."<br>";
 	}
+
 }
 
 function sanitizeScoresInDatabase() {
-	removeInvalidScores();
-	pushToScoresTable();
-	resetLoginTable();
+	if(removeInvalidScores()) {
+		if(pushToScoresTable()) {
+			resetLoginTable();
+		}
+	}
 }
 
 ?>
