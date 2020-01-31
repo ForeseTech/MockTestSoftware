@@ -49,6 +49,7 @@
 				$sql->bindParam(5, $_SESSION['terminalNum']);
 				$sql->execute();
 
+				$conn = NULL;
 				redirect("../rules/index.html");
 			}
 		}

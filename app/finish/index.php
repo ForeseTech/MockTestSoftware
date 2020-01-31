@@ -36,6 +36,8 @@
 		$sql->bindParam(7, $_SESSION['terminalNum']);
 		$sql->execute();
 
+		$conn=NULL;
+
 	} catch (PDOExcpetion $e){
 		echo $e."<br>";
 	}

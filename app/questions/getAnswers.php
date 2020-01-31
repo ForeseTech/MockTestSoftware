@@ -40,4 +40,6 @@ catch (PDOException $e) {
 	echo "$e<br>";
 }
 
+$conn = NULL;
+
 ?>

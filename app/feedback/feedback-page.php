@@ -21,6 +21,8 @@ try{
 	$sql->bindParam(2, $ratings);
 	$sql->execute();
 
+	$conn = NULL;
+
 } catch (PDOExcpetion $e){
 	echo $e."<br>";
 }

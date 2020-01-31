@@ -108,4 +108,6 @@
 	} catch(PDOException $e){
 		$e."<br>";
 	}
+
+	$conn = NULL;
 ?>
