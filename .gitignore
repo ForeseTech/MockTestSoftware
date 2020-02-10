@@ -3,7 +3,7 @@
 
 # Secrets
 *sql-variables.php
-*sql-functions.php
+*sql-connections.php
 
 # SQL-Dump and CSV Files
 *MOCKS20-data.sql
