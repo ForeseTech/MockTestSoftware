@@ -13,6 +13,7 @@ Documentation shall be provided soon.
 * XAMPP
 
 ## Contributors
-* Development and Design - Arjun Aravind
-* Input & Feedback - v1.0 - Aravind Balakrishnan, Jashaul D, Pranav Wadhwa, Jeyenth, Kaushik G
-* Input & Feedback - v2.0 - Pojaa R, Nilesh D
+* Development and Design - [Arjun Aravind](https://github.com/ArjArav98)
+* Input & Feedback - v1.0 - [Aravind Balakrishnan](https://github.com/AravBk), [Jashaul D](https://github.com/Jashaul), Pranav Wadhwa, Jeyenth, Kaushik G
+* Input & Feedback - v2.0 - [Pojaa R](https://github.com/PojaaR), [Nilesh D](https://github.com/Nilesh2000)
+* Input & Feedback (Security) - v2.0 - [Yuvaraj J](https://github.com/jyuvaraj03)
